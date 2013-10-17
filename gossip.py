@@ -34,11 +34,15 @@ Structure:
 
 
 Next steps:
+ TODO: state_history should not be a list but epoch, timestamps, state value
  TODO: start at given time
+ TODO: change active thread so to start not always at the beginning of the
+  epoch
  TODO: how is 'convergence' defined? number of epochs? when does the experiment
- start? when end? / clean thread exit!
+  start? when end? / clean thread exit!
  TODO: check that no unrelated traffic blocks the connections
- TODO: log same folder as csv
+ TODO: log to same folder as csv
+ TODO: change load_experiment to really load all values needed
 """
 
 import subprocess
@@ -157,11 +161,13 @@ def load_experiment(file_experimental_setup):
     separator = re.compile(r',\s?')
     try:
         with open (file_experimental_setup, 'r') as f:
+            """ --- JIANNAN: this should be done via configuration parser --- """
             tuplex = separator.split(f.readline().strip())
             try:
                 experiment['graph'] = tuplex[0]
                 experiment['aggregation'] = tuplex[1]
                 experiment['run'] = tuplex[2]
+                """ --- END --- """
             except IndexError:
                 logger.error("experiment file is ill formatted") 
                 raise

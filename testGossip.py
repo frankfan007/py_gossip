@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 '''
 Title: Tests for Gossip
 Author: Niklas Semmler
