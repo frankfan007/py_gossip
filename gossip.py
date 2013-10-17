@@ -4,9 +4,9 @@ Title: Gossip Agent
 Author: Niklas Semmler
 Description: Gossip algorithm as taken from:
 
-M. Jelasity, A. Montresor, and O. Babaoglu, “Gossip-based aggregation in large
- dynamic networks,” ACM Transactions on Computer Systems (TOCS), vol. 23,
- no. 3, pp. 219–252, 2005.
+M. Jelasity, A. Montresor, and O. Babaoglu, "Gossip-based aggregation in large
+ dynamic networks," ACM Transactions on Computer Systems (TOCS), vol. 23,
+ no. 3, pp. 219-252, 2005.
 
 Pseudo Code:
 ActiveThread
