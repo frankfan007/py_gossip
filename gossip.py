@@ -34,15 +34,7 @@ Structure:
 
 
 Next steps:
- TODO: state_history should not be a list but epoch, timestamps, state value
- TODO: start at given time
- TODO: change active thread so to start not always at the beginning of the
-  epoch
- TODO: how is 'convergence' defined? number of epochs? when does the experiment
-  start? when end? / clean thread exit!
  TODO: check that no unrelated traffic blocks the connections
- TODO: log to same folder as csv
- TODO: change load_experiment to really load all values needed
 """
 
 import subprocess
@@ -55,322 +47,416 @@ import socket
 import threading
 import json
 import time
+import ConfigParser
+import argparse
+import signal
 
-def create_logger(formatter):
-    """ create logging object """
-    logger = logging.getLogger('gossip daemon')
-    out_file = logging.FileHandler('/var/tmp/myapp.log') # TODO: wrong path!
-    out_file.setFormatter(formatter)
-    logger.addHandler(out_file)
-    logger.setLevel(logging.WARNING)
-    return logger
 
-def get_interface_ip_address(iface):
-    """ get IP address of interface """
-    regexp = re.compile(
-        r'inet ([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})/[0-9]{1,3}'
-        # for testing on Mac
-        #r'inet ([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})'
-    )
-    try:
-        output = subprocess.check_output(
-            ["ip", "addr", "show", "dev", iface]
-            # for testing on Mac
-            #["ifconfig", iface]
+class GossipEpoch(object):
+    """ managing the epochs of the gossip algorithm """
+    def __init__(self, start_time, max_epoch, epoch_dur):
+        self._start_time = start_time
+        self._max_epoch = max_epoch
+        self._epoch_duration = epoch_dur
+
+    def start(self):
+        """ wait till the experiment starts """
+        time_to_wait = self._start_time - time.time()
+        if time_to_wait > 0:
+            time.sleep(time_to_wait)
+        else:
+            raise Exception("Not started yet start time is already over... \
+                Exiting...")
+
+    def next_epoch(self):
+        """ proceed to the next epoch (blocking) """
+        self._epoch += 1
+        # sleep till next epoch
+        next_cycle = self._epoch * self._epoch_duration + self._start_time
+        sleep_time = next_cycle - time.time()
+        if sleep_time > 0:
+            time.sleep(sleep_time)
+        else:
+            raise Exception("already over the next epoch's start time")
+
+    def last_epoch_reached(self):
+        """ check for end of experiment
+        """
+        if self._epoch < self._max_epoch:
+            return True
+        else:
+            return False
+
+    def stop(self):
+        """ stop experiment now """
+        self._epoch = self._max_epoch
+
+    @property
+    def curr_epoch(self):
+        return self._epoch
+
+class GossipState(object):
+    """ managing the state of the gossip algorithm """
+
+    def __init__(self, initial_state, gossip_epoch):
+        self._state = initial_state
+        self._gossip_epoch = gossip_epoch
+        self._state_history = []
+        self._lock = threading.Lock()
+
+    def get_and_acquire(self):
+        """ get current state and acquire lock """
+        self._lock.acquire()
+        return self._state
+
+    def update_and_release(self, new_state, epoch):
+        """ update state, add to history and release lock """
+        def aggregate(state, new_state):
+            """ Aggregate states """
+            return (state + new_state) / 2
+        self._state = aggregate(self._state, new_state)
+        self._state_history.append(
+            [self._gossip_epoch.curr_epoch, time.time(), self._state]
         )
-    except subprocess.CalledProcessError:
-        logger.error("Command was not successfully excecuted")
-        raise
+        self._lock.release()
+        return self._state
 
-    iface_ip_list = re.findall(regexp, output)
-    if len(iface_ip_list) == 1:
-        return iface_ip_list[0]
-    elif len(iface_ip_list) > 1:
-        logger.warn("more than one ip on interface: %s", iface_ip_list)
-        return iface_ip_list[0]
-    else:
-        logger.error("no ip found on interface. Exiting...")
-        raise Exception
+    @property
+    def history(self):
+        return self._state_history
 
-""" --- Constants --- """
-FORMAT = "%(asctime)-15s [%(level)s] %(message)s"
-FILE_LIST_OF_NEIGHBOURS = "/etc/gossip_neighbors"
-FILE_EXPERIMENTAL_SETUP = "/hosthome/new_home/gossip_experiment"
-FOLDER_RESULTS = "/hosthome/new_home/results/"
-SOCKET_BUFFER_SIZE = 1024
-SOCKET_TIMEOUT = 5
-RECV_PORT = 5001
-SEND_PORT = 5002
-MAX_ERRORS_PER_THREAD = 10
-NODE_INTERFACE = "lo:1"
+class GossipThread(threading.Thread):
+    """ basic thread for gossip algorithm """
 
-""" --- Constants (need to be defined via function) --- """
-NODE_NAME = socket.gethostname()
-logger = create_logger(FORMAT)
 
-""" --- global variables ---- """
-threads = []
-lock_state = threading.Lock()
-state = None
-state_history = []
-converged = False
-
-def mkdir_p(folders):
-    """ unix 'mkdir -p' synonym """
-    logger.debug("Create folders %s", folders)
-    path = folders.lstrip(os.sep).split(os.sep)
-    for i in xrange(1, len(path)+1):
-        sub_path = os.sep + os.sep.join(path[:i])
-        print sub_path
-        if not os.path.isdir(sub_path):
-            if not os.path.exists(sub_path):
-                os.mkdir(sub_path)
-            else:
-                os.remove(sub_path)
-                os.mkdir(sub_path)
-
-def read_file_of_neighbours(file_list_of_neighbours):
-    """ get local neighbours
-        <Neighbour>,<IP>
-    """
-    logger.debug("reading neigbour file at %s", file_list_of_neighbours)
-    dict_of_neighbours = {}
-    separator = re.compile(r',\s?')
-    try:
-        with open(file_list_of_neighbours, 'r') as f:
-            for line in f.readlines():
-                try:
-                    neighbour_id, neighbour_ip = separator.split(line.strip())
-                except ValueError:
-                    logger.error("neighbour file is ill-formatted")
-                    raise
-                else:
-                    dict_of_neighbours[neighbour_id] = neighbour_ip
-    except IOError:
-        logger.error("neighbour file could not be read")
-        raise
-    else:
-        return dict_of_neighbours
-
-def load_experiment(file_experimental_setup):
-    """ define graph name and aggregation function to be used
-        <Graph>,<Aggregation>,<Run>
-    """
-    logger.debug("reading experiment setup file at %s", file_experimental_setup)
-    experiment = {}
-    separator = re.compile(r',\s?')
-    try:
-        with open (file_experimental_setup, 'r') as f:
-            """ --- JIANNAN: this should be done via configuration parser --- """
-            tuplex = separator.split(f.readline().strip())
-            try:
-                experiment['graph'] = tuplex[0]
-                experiment['aggregation'] = tuplex[1]
-                experiment['run'] = tuplex[2]
-                """ --- END --- """
-            except IndexError:
-                logger.error("experiment file is ill formatted") 
-                raise
-    except IOError:
-        logger.error("experiment file could not be read")
-        raise
-    else:
-        return experiment
-
-def generate_output_file(folder_results, experiment, node_name):
-    """ return output folder for writing data and logs
-        <path>/<aggregation>/<graph>/<run>/<node>.csv
-    """
-    logger.debug("generating output file")
-    if not os.path.isdir(folder_results):
-        logger.error("root output folder %s does not exist", folder_results)
-        raise IOError
-
-    sub_folder_results = os.sep.join([
-        folder_results,
-        experiment['aggregation'],
-        experiment['graph'],
-        experiment['run']]
-    )
-    if not os.path.isdir(sub_folder_results):
-        mkdir_p(sub_folder_results)
-
-    output_file = os.sep.join([sub_folder_results, node_name])
-    try:
-        open(output_file, 'w').close()
-    except (IOError, OSError):
-        logger.error("Could not create output file!")
-        raise
-    else:
-        return output_file
-
-def save_current_state(file_results, state_history):
-    """ write the current to a file for later analysis
-        In: (<time>,<state>)
-        Out: <epoch>,<time>,<state>
-    """
-    logger.debug("saving state history")
-    if not os.path.isfile(file_results):
-        logger.warn("output file does not exist... should have been created \
-during setup. Trying to recreate....")
-        try:
-            open(file_results, 'w').close()
-        except (OSError, IOError):
-            logger.error("Recreating file failed")
-            raise
-
-    try:
-        with open(file_results, 'w') as f:
-            f.write("counter,time,state\n")
-            for i in xrange(len(state_history)):
-                f.write("%s,%s,%s\n" % (
-                    i, state_history[i][0], state_history[i][1]
-                ))
-    except (OSError, IOError):
-        logger.error("Could not write state history.")
-        raise
-
-def update(state, new_state):
-    """ Aggregate states """
-    state = (state+new_state) / 2
-    return state
-
-def create_socket(address):
-    """ create socket
-    """
-    try:
-        sock = socket.socket(family=socket.AF_INET, type=socket.SOCK_STREAM)
-    except socket.error:
-        logger.error('Could not create socket')
-        raise
-    try:
-        sock.bind(address)
-    except socket.error:
-        logger.error('Could not bind to socket')
-        raise
-    return sock
-
-def destroy_socket(sock):
-    """ close socket
-    """
-    sock.close()
-
-def is_converged(state_history):
-    # show if state_history is converged
-    raise NotImplementedError
-
-def exit_program(exit_code, output_file):
-    for threadx in threads:
-        threadx.join()
-    save_current_state(output_file, state_history)
-    sys.exit(exit_code)
-
-class gossipThread(threading.Thread):
-    def __init__(self, sock, dict_neighs, exp):
+class ActiveThread(GossipThread):
+    def __init__(self, sock, config, logger, gossip_state, gossip_epoch,
+            dict_of_neighbours):
         self.sock = sock
-        self.dict_of_neighbours = dict_neighs
-        self.experiment = exp
+        self.config = config
+        self.logger = logger
+        self.gossip_state = gossip_state
+        self.gossip_epoch = gossip_epoch
+        self.dict_of_neighs = dict_of_neighbours
+        super(GossipThread, self).__init__()
 
-    def exit_thread(self, exit_code):
-        # TODO: fix
-        global converged
-        converged = True
-
-class activeThread(gossipThread):
     def run(self):
         """ wait for nodes asking for the state and reply
         """
-        error_count, error_limit = 0, MAX_ERRORS_PER_THREAD
-        self.sock.timeout(SOCKET_TIMEOUT)
-        global converged
-        global state
-        global state_history
-        while not converged: # execute once every epoch
+        epoch_info = self.config.items('epochs')
+        error_count, error_limit = 0, self.config.get('threads', 'max_error')
+        self.sock.timeout(self.config.get('network', 'socket_timeout'))
+        epoch = 0
+        while not self.gossip_epoch.last_epoch_reached:
             try:
-                neighbour_key = random.choice(self.dict_of_neighbours.keys())
-                logger.debug("Connecting to %s", dict_of_neighbours[neighbour_key])
-                self.sock.connect((dict_of_neighbours[neighbour_key], RECV_PORT))
-
-                # ----- LOCK REGION BEGIN -----
-                lock_state.acquire()
-                msg_send = json.dumps(state)
+                neighbour_key = random.choice(self.dict_of_neighs.keys())
+                self.logger.debug("Connecting to %s",
+                    dict_of_neighbours[neighbour_key])
+                connection = self.sock.connect((
+                    dict_of_neighbours[neighbour_key],
+                    self.config.get('network', 'recv_port')
+                ))
+                msg_send = json.dumps(
+                    self.gossip_state.get_and_acquire()
+                )
                 self.sock.send(msg_send)
-                msg_recv = self.sock.recv(SOCKET_BUFFER_SIZE)
+                msg_recv = connection.recv(
+                    self.config.get('network', 'socket_buffer_size')
+                )
                 new_state = json.loads(msg_recv)
+                self.gossip_state.update_and_release(new_state)
 
-                # state updating
-                state = update(state, new_state)
-                state_history.append(state)
-
-                # sleep till next epoch
-                converged = is_converged(state_history) # TODO: define converged
-                lock_state.release()
-                # ----- LOCK REGION END -----
+                self.gossip_epoch.next_epoch()
             except:
                 if error_count < error_limit:
-                    logger.exception("passive thread had an error!")
+                    self.logger.exception("passive thread had an error!")
                 else:
-                    logger.error("passive thread had 10 errors!")
-                    self.exit_thread(1)
-        destroy_socket(self.sock)
-        self.exit_thread(0)
+                    self.logger.error("passive thread had 10 errors!")
+                    print "FAILED"
+                    self.gossip_epoch.stop()
+        self.sock.close()
 
-class passiveThread(gossipThread):
+class PassiveThread(GossipThread):
     def run(self):
         """ wait for nodes asking for the state and reply
         """
-        error_count, error_limit = 0, MAX_ERRORS_PER_THREAD
-        self.sock.timeout(SOCKET_TIMEOUT)
-        global state
-        global state_history
-        while not converged: # always listen
+        error_count, error_limit = 0, self.config.get('threads', 'max_error')
+        self.sock.timeout(self.config.get('network', 'socket_timeout'))
+        while not self.gossip_epoch.last_epoch_reached:
             try:
-                # connection handling
                 connection, address = self.sock.accept()
-                logger.debug("Connected to %s at port %s", address[0], address[1])
-                # ----- LOCK REGION BEGIN -----
-                lock_state.acquire()
-                msg_send = json.dumps(state)
-                msg_recv = connection.recv(SOCKET_BUFFER_SIZE)
-                new_state = json.loads(msg_recv)
+                self.logger.debug("Connected to %s at port %s",
+                    address[0], address[1])
+                msg_recv = connection.recv(
+                    self.config.get('network', 'socket_buffer_size')
+                )
+                msg_send = json.dumps(
+                    self.gossip_state.get_and_acquire()
+                )
                 connection.send(msg_send)
                 connection.close()
 
-                # state updating
-                state = update(state, new_state)
-                state_history.append(state)
-                lock_state.release()
-                # ----- LOCK REGION END-----
+                new_state = json.loads(msg_recv)
+                self.gossip_state.update_and_release(new_state)
             except:
                 if error_count < error_limit:
-                    logger.exception("passive thread had an error!")
+                    self.logger.exception("passive thread had an error!")
                 else:
-                    logger.error("passive thread had 10 errors!")
-                    self.exit_thread(1)
-        destroy_socket(self.sock)
+                    self.logger.error("passive thread had 10 errors!")
+                    print "FAILED"
+                    self.gossip_epoch.stop()
+        self.sock.close()
 
-if "__name__" == "__main__":
-    try:
-        node_ip = get_interface_ip_address(NODE_INTERFACE)
-    except Exception:
-        logger.exception()
-        sys.exit(1)
+class BaseDaemon(object):
+    def __init__(self):
+        self.logger = logging.getLogger()
+        signal.signal(signal.SIGINT, self.signal_handler)
 
-    experiment = load_experiment(FILE_EXPERIMENTAL_SETUP)
-    dict_of_neighbours = read_file_of_neighbours(FILE_LIST_OF_NEIGHBOURS)
-    output_file = generate_output_file(FOLDER_RESULTS, experiment, NODE_NAME)
+    def parse_arguments(self, descr, args):
+        """ defines arguments of program """
+        parser = argparse
+        parser = argparse.ArgumentParser(description=descr)
+        for arg in args:
+            parser.add_argument(arg[0], **arg[1])
+        return parser.parse_args()
 
-    passive_sock = create_socket((node_ip, RECV_PORT))
-    active_sock = create_socket((node_ip, SEND_PORT))
+    def parse_config(self, configuration_path):
+        """ parse configuration file """
+        configx = ConfigParser.RawConfigParser()
+        configx.read(configuration_path)
+        return configx
 
-    passive_thread = passiveThread(
-        passive_sock, dict_of_neighbours, experiment, output_file
-    )
-    passive_thread.start()
-    threads.append(passive_thread)
+    def create_logger(self, formatter, path_to_file):
+        """ create logging object """
+        logx = logging.getLogger()
+        file_handler = logging.FileHandler(path_to_file, mode='w')
+        file_handler.setFormatter(
+            logging.Formatter(formatter)
+        )
+        logx.addHandler(file_handler)
+        logx.setLevel(logging.DEBUG)
+        return logx
 
-    active_thread = activeThread(
-        active_sock, dict_of_neighbours, experiment, output_file
-    )
-    active_thread.start()
-    threads.append(active_thread)
+    def signal_handler(self, signum, stackframe):
+        """ handle all signals """
+        self.logger.warn("Got signal %s!", signum)
+        print "got signal %s!" % signum
+
+class GossipDaemon(BaseDaemon):
+    def __init__(self):
+        options = [
+            ('-f', {'dest':"configpath", 'type':str, 'required':True,
+            'help':"locate the config file"}),
+            ('-t', {'dest':"start_time", 'type':float, 'required':True,
+            'help':"start time for the experiment"}),
+            ('-s', {'dest':"state", 'type':float, 'required':True,
+            'help':"initial state"})
+        ]
+        args = self.parse_arguments("Gossip aggregator agent", options)
+        self.config = self.parse_config(args.configpath)
+        self.threads = {}
+        self.gepoch = GossipEpoch(
+            args.start_time,
+            self.config.get('epochs', 'max'),
+            self.config.get('epochs', 'duration')
+        )
+        self.gstate = GossipState(args.state, self.gepoch)
+
+    def create_socket(self, address):
+        """ create socket
+        """
+        try:
+            sock = socket.socket(family=socket.AF_INET, type=socket.SOCK_STREAM)
+        except socket.error:
+            self.logger.error('Could not create socket')
+            raise
+        try:
+            sock.bind(address)
+        except socket.error:
+            self.logger.error('Could not bind to socket')
+            raise
+        return sock
+
+    def generate_output_files(self, root_folder, sub_folder, node_name):
+        """ return output files for writing data and logs
+        """
+        print "Create folder %s" % os.path.join(root_folder, sub_folder)
+
+        def mkdir_p(folders):
+            """ unix 'mkdir -p' synonym """
+            path = folders.lstrip(os.sep).split(os.sep)
+            for i in xrange(1, len(path)+1):
+                sub_path = os.sep + os.sep.join(path[:i])
+                if not os.path.isdir(sub_path):
+                    if not os.path.exists(sub_path):
+                        os.mkdir(sub_path)
+                    else:
+                        os.remove(sub_path)
+                        os.mkdir(sub_path)
+
+        if not os.path.isdir(root_folder):
+            raise IOError
+
+        if not os.path.isdir(sub_folder):
+            mkdir_p(os.path.join(root_folder, sub_folder))
+
+        output_file = os.path.join(root_folder, sub_folder, node_name + '.csv')
+        log_file = os.path.join(root_folder, sub_folder, node_name + '.log')
+        open(output_file, 'w').close()
+        open(log_file, 'w').close()
+        return output_file, log_file
+
+    def read_file_of_neighbours(self, file_list_of_neighbours):
+        """ get local neighbours
+            <Neighbour>,<IP>
+        """
+        self.logger.debug("reading neigbour file at %s",
+            file_list_of_neighbours
+        )
+        dict_of_neighbours = {}
+        separator = re.compile(r',\s?')
+        try:
+            with open(file_list_of_neighbours, 'r') as f:
+                for line in f.readlines():
+                    try:
+                        neighbour_id, neighbour_ip = separator.split(
+                            line.strip()
+                        )
+                    except ValueError:
+                        self.logger.error("neighbour file is ill-formatted")
+                        raise
+                    else:
+                        dict_of_neighbours[neighbour_id] = neighbour_ip
+        except IOError:
+            self.logger.error("neighbour file could not be read")
+            raise
+        else:
+            return dict_of_neighbours
+
+    def get_interface_ip_address(self, iface):
+        """ get IP address of interface """
+        if sys.platform == 'darwin':
+            inet_regex = \
+                r'inet ([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})'
+            command = ["ifconfig", iface]
+        else:
+            inet_regex = \
+                r'inet ([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})/[0-9]{1,3}'
+            command = ["ip", "addr", "show", "dev", iface]
+
+        regex = re.compile(inet_regex)
+        try:
+            output = subprocess.check_output(command)
+        except subprocess.CalledProcessError:
+            self.logger.error("Command was not successfully excecuted")
+            raise
+
+        iface_ip_list = re.findall(regex, output)
+        if len(iface_ip_list) == 1:
+            return iface_ip_list[0]
+        elif len(iface_ip_list) > 1:
+            self.logger.warn("more than one ip on interface: %s", iface_ip_list)
+            return iface_ip_list[0]
+        else:
+            self.logger.error("no ip found on interface. Exiting...")
+            raise Exception
+
+    def store_results(self, file_results):
+        """ write the current to a file for later analysis
+            In: (<time>,<state>)
+            Out: <epoch>,<time>,<state>
+        """
+        self.logger.debug("saving state history")
+        if not os.path.isfile(file_results):
+            self.logger.warn("output file does not exist... should have been created \
+    during setup. Trying to recreate....")
+            try:
+                open(file_results, 'w').close()
+            except (OSError, IOError):
+                self.logger.error("Recreating file failed")
+                raise
+
+        try:
+            with open(file_results, 'w') as f:
+                f.write("counter,time,state\n")
+                for line in xrange(len(self.gstate.history)):
+                    f.write("%s\n" % ','.join(line))
+        except (OSError, IOError):
+            self.logger.error("Could not write state history.")
+            raise
+
+    def main(self):
+        def experiment_path():
+            return os.path.join(
+                    self.config.get('experiment', 'aggregation'),
+                    self.config.get('experiment', 'graph'),
+                    self.config.get('experiment', 'run')
+            )
+
+        node_name = socket.gethostname()
+
+        try:
+            output_file, log_file = self.generate_output_files(
+                self.config.get('paths', 'root_folder'),
+                experiment_path(),
+                node_name
+            )
+        except:
+            print "Could not generate output files :( Exiting..."
+            sys.exit(1)
+
+        self.logger = self.create_logger(
+            self.config.get('logging', 'format'), log_file
+        )
+
+        try:
+            node_ip = self.get_interface_ip_address(self.config.get(
+                'network', 'node_interface'
+            ))
+        except:
+            self.logger.exception("Could not get ip address of interface %s",
+                self.config.get('network', 'node_interface')
+            )
+            sys.exit(1)
+
+        dict_of_neighbours = self.read_file_of_neighbours(
+            self.config.get('paths', 'list_of_neighbours_file')
+        )
+        thread_parameters = (
+            self.config, self.logger, self.gstate, self.gepoch
+        )
+        addresses = {
+            'active':(node_ip, int(self.config.get('network', 'recv_port'))),
+            'passive':(node_ip, int(self.config.get('network', 'send_port'))),
+        }
+        self.prepare_threads(addresses, thread_parameters)
+        self.run_threads(dict_of_neighbours)
+        self.store_results(output_file)
+
+    def prepare_threads(self, addresses, thread_parameters):
+        """ initialize threads """
+        socks = {}
+        try:
+            for name, addr in addresses.iteritems():
+                socks[name] = self.create_socket(addr)
+        except socket.error:
+            self.logger.error("Could not setup network")
+            sys.exit(1)
+
+        passive_thread = PassiveThread(socks['passive'], *thread_parameters)
+        active_thread = ActiveThread(socks['active'], *thread_parameters)
+        self.threads['passive'] = passive_thread
+        self.threads['active'] = active_thread
+
+    def run_threads(self, dict_of_neighbours):
+        """ Starting active and passive thread """
+        self.threads['passive'].start()
+        self.threads['active'].start(dict_of_neighbours)
+        self.threads['active'].join()
+        self.threads['passive'].join()
+
+if __name__ == '__main__':
+    gossip_daemon = GossipDaemon()
+    gossip_daemon.main()
+    print "Success! :)"
+    sys.exit(0)
