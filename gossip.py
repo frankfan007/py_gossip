@@ -76,14 +76,15 @@ class GossipEpoch(object):
 
     def next_epoch(self):
         """ proceed to the next epoch (blocking) """
+        self._epoch += 1
         self._logger.debug("Next epoch: %s", self._epoch)
         # sleep till next epoch
-        self._epoch += 1
         next_cycle = self._epoch * self._epoch_duration + self._start_time
         sleep_time = next_cycle - time.time()
         self._logger.debug("sleeping for %s", sleep_time)
         if sleep_time > 0:
             time.sleep(sleep_time)
+            self._logger.debug("woke up")
         else:
             raise Exception("already over the next epoch's start time")
 
@@ -91,9 +92,9 @@ class GossipEpoch(object):
         """ check for end of experiment
         """
         if self._epoch < self._max_epoch:
-            self._logger.debug("epoch %s", self._epoch)
             return False
         else:
+            self._logger.debug("last epoch reached")
             return True
 
     def stop(self):
@@ -129,9 +130,11 @@ class GossipState(object):
         self._state = aggregate(self._state, new_state)
         self._logger.debug("Received state %s, new state %s", new_state,
             self._state)
-        self._state_history.append( # TODO: add node name of neighbour
-            [self._gossip_epoch.curr_epoch, time.time(), self._state]
-        )
+        self._state_history.append([ # TODO: add node name of neighbour
+            str(self._gossip_epoch.curr_epoch),
+            str(time.time()),
+            str(self._state)
+        ])
         self._lock.release()
         self._logger.debug("releasing lock")
         return self._state
@@ -139,7 +142,7 @@ class GossipState(object):
     def emergency_release(self):
         """ used in case of errors """
         if self._lock.locked():
-            self._logger.debug("Emergency lock release()")
+            self._logger.debug("Emergency lock release")
             self._lock.release()
 
     @property
@@ -149,13 +152,14 @@ class GossipState(object):
 
 class GossipSocket(object):
     def __init__(self, ip_addr, config, logger):
-        self.recv_port = config.get('network', 'recv_port')
-        self.send_port = config.get('network', 'send_port')
-        self.buf_size = config.get('network', 'buf_size')
+        self.recv_port = int(config.get('network', 'recv_port'))
+        self.send_port = int(config.get('network', 'send_port'))
+        self.buf_size = int(config.get('network', 'buf_size'))
         self.ip_addr = ip_addr
         self.logger = logger
         self.connection = None
-        socket.setdefaulttimeout(config.get('network', 'timeout'))
+        self.sock = None
+        socket.setdefaulttimeout(float(config.get('network', 'timeout')))
 
     def create_socket(self, port):
         """ create socket
@@ -179,11 +183,14 @@ class GossipSocket(object):
     def connect(self, target_ip_addr):
         """ connect to IP, create new socket """
         self.logger.debug("Connecting to address %s", target_ip_addr)
-        if self.connection:
+        if self.sock:
             self.logger.debug("connection exists, recreating socket")
-            self.connection.close()
+            self.sock.close()
+            time.sleep(1)
         self.sock = self.create_socket(self.send_port)
         self.sock.connect((target_ip_addr, self.recv_port))
+        self.logger.debug("Created connection to %s at port %s",
+            target_ip_addr, self.recv_port)
         self.connection = self.sock
 
     def accept(self):
@@ -196,7 +203,8 @@ class GossipSocket(object):
         if self.connection:
             self.connection.close()
         self.connection, address = self.sock.accept()
-        self.logger.debug("Connected to %s at port %s", address)
+        self.logger.debug("Accepted connection from %s at port %s",
+            address[0], address[1])
 
     def send(self, data):
         """ put data into json format and send message """
@@ -230,6 +238,7 @@ class ActiveGossipThread(GossipThread):
     def run(self):
         """ wait for nodes asking for the state and reply
         """
+        locked_by_me = False
         error_count = 0
         error_limit = int(self.config.get('threads', 'max_error'))
         self.logger.debug("running active thread")
@@ -238,6 +247,8 @@ class ActiveGossipThread(GossipThread):
             sys.stdout.flush()
             try:
                 self.gossip_epoch.next_epoch() # TODO
+                time.sleep(random.randint(0, 300) / 100.0)
+                locked_by_me = True
                 neighbour = random.choice(self.dict_of_neighbours.keys())
                 neighbour_ip = self.dict_of_neighbours[neighbour]
                 msg_send = self.gossip_state.get_and_acquire()
@@ -245,16 +256,24 @@ class ActiveGossipThread(GossipThread):
                 self.gossip_socket.send(msg_send)
                 new_state = self.gossip_socket.recv()
                 self.gossip_state.update_and_release(new_state)
+            except socket.timeout:
+                self.logger.debug("active thread timed out")
+                if locked_by_me:
+                    self.gossip_state.emergency_release()
+                    time.sleep(1)
+                    locked_by_me = False
             except:
-                self.gossip_state.emergency_release()
-                if error_count < error_limit:
-                    self.logger.exception("active thread had an error!")
-                    error_count += 1
-                else:
+                if locked_by_me:
+                    self.gossip_state.emergency_release()
+                    time.sleep(1)
+                    locked_by_me = False
+                error_count += 1
+                self.logger.exception("active thread had %s error!" %
+                    error_count)
+                if error_count >= error_limit:
                     self.logger.error("active thread had 10 errors!")
                     print "FAILED"
                     self.gossip_epoch.stop()
-
 
 class PassiveGossipThread(GossipThread):
     def __init__(self, *args):
@@ -263,26 +282,33 @@ class PassiveGossipThread(GossipThread):
     def run(self):
         """ wait for nodes asking for the state and reply
         """
+        locked_by_me = False
         error_count = 0
         error_limit = int(self.config.get('threads', 'max_error'))
         self.logger.debug("running passive thread")
         while not self.gossip_epoch.last_epoch_reached():
             try:
+                msg_send = self.gossip_state.get_and_acquire()
+                locked_by_me = True
                 self.gossip_socket.accept()
-                try:
-                    new_state = self.gossip_state.recv()
-                    msg_send = self.gossip_state.get_and_acquire()
-                    self.gossip_socket.send(msg_send)
-                except socket.error:
+                new_state = self.gossip_socket.recv()
+                self.gossip_socket.send(msg_send)
+                self.gossip_state.update_and_release(new_state)
+            except socket.timeout:
+                self.logger.warn("passive thread timed out")
+                if locked_by_me:
                     self.gossip_state.emergency_release()
-                    raise
-                else:
-                    self.gossip_state.update_and_release(new_state)
+                    time.sleep(1)
+                    locked_by_me = False
             except:
+                if locked_by_me:
+                    self.gossip_state.emergency_release()
+                    time.sleep(1)
+                    locked_by_me = False
+                error_count += 1
+                self.logger.exception("passive thread had %s error!" %
+                    error_count)
                 if error_count < error_limit:
-                    self.logger.exception("passive thread had an error!")
-                    error_count += 1
-                else:
                     self.logger.error("passive thread had 10 errors!")
                     print "FAILED"
                     self.gossip_epoch.stop()
@@ -454,8 +480,8 @@ class GossipDaemon(BaseDaemon):
 
         try:
             with open(file_results, 'w') as f:
-                f.write("counter,time,state\n")
-                for line in xrange(len(self.gstate.history)):
+                f.write("epoch,time,state\n")
+                for line in self.gstate.history:
                     f.write("%s\n" % ','.join(line))
         except (OSError, IOError):
             self.logger.error("Could not write state history.")
@@ -466,7 +492,6 @@ class GossipDaemon(BaseDaemon):
         socks = {}
         passive_sock = GossipSocket(node_ip, self.config, self.logger)
         passive_thread = PassiveGossipThread(
-            socks['passive'],
             self.config,
             self.logger,
             self.gstate,
@@ -475,7 +500,6 @@ class GossipDaemon(BaseDaemon):
         )
         active_sock = GossipSocket(node_ip, self.config, self.logger)
         active_thread = ActiveGossipThread(
-            socks['active'],
             dict_of_neighbours,
             self.config,
             self.logger,
