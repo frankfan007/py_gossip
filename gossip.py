@@ -257,7 +257,7 @@ class ActiveGossipThread(GossipThread):
                 new_state = self.gossip_socket.recv()
                 self.gossip_state.update_and_release(new_state)
             except socket.timeout:
-                self.logger.debug("active thread timed out")
+                self.logger.debug("active thread timed out XXX")
                 if locked_by_me:
                     self.gossip_state.emergency_release()
                     time.sleep(1)
@@ -459,7 +459,7 @@ class GossipDaemon(BaseDaemon):
             return iface_ip_list[0]
         elif len(iface_ip_list) > 1:
             self.logger.warn("more than one ip on interface: %s", iface_ip_list)
-            return iface_ip_list[0]
+            return iface_ip_list[-1]
         else:
             self.logger.error("no ip found on interface. Exiting...")
             raise Exception
