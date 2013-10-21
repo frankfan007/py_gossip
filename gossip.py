@@ -459,6 +459,7 @@ class GossipDaemon(BaseDaemon):
             return iface_ip_list[0]
         elif len(iface_ip_list) > 1:
             self.logger.warn("more than one ip on interface: %s", iface_ip_list)
+            self.logger.warn("choosing %s", iface_ip_list[-1])
             return iface_ip_list[-1]
         else:
             self.logger.error("no ip found on interface. Exiting...")
