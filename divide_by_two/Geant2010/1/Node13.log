@@ -1,0 +1,2075 @@
+2013-10-22 23:44:36,311 [WARNING] mooore than one ip on interface: ['127.0.0.1', '192.168.2.13']
+2013-10-22 23:44:36,316 [WARNING] choosing 192.168.2.13
+2013-10-22 23:44:36,316 [DEBUG] reading neigbour file at /etc/gossip_neighbors
+2013-10-22 23:44:36,319 [DEBUG] preparing threads and sockets
+2013-10-22 23:44:36,321 [DEBUG] running threads
+2013-10-22 23:44:36,321 [DEBUG] waiting for 247.678159952 seconds
+2013-10-22 23:48:43,942 [DEBUG] running passive thread
+2013-10-22 23:48:43,943 [DEBUG] acquired lock
+2013-10-22 23:48:43,944 [DEBUG] Accepting connections
+2013-10-22 23:48:43,944 [DEBUG] socket does not exist, creating socket
+2013-10-22 23:48:43,945 [DEBUG] bind to IP addres 192.168.2.13 port 5001
+2013-10-22 23:48:43,959 [DEBUG] running active thread
+2013-10-22 23:48:43,960 [DEBUG] Next epoch: 1
+2013-10-22 23:48:43,961 [DEBUG] sleeping for 15.0390191078
+2013-10-22 23:48:46,944 [WARNING] passive thread timed out
+2013-10-22 23:48:46,945 [DEBUG] Emergency lock release
+2013-10-22 23:48:47,944 [DEBUG] acquired lock
+2013-10-22 23:48:47,944 [DEBUG] Accepting connections
+2013-10-22 23:48:50,954 [WARNING] passive thread timed out
+2013-10-22 23:48:50,954 [DEBUG] Emergency lock release
+2013-10-22 23:48:51,954 [DEBUG] acquired lock
+2013-10-22 23:48:51,954 [DEBUG] Accepting connections
+2013-10-22 23:48:54,964 [WARNING] passive thread timed out
+2013-10-22 23:48:54,964 [DEBUG] Emergency lock release
+2013-10-22 23:48:55,964 [DEBUG] acquired lock
+2013-10-22 23:48:55,964 [DEBUG] Accepting connections
+2013-10-22 23:48:58,974 [WARNING] passive thread timed out
+2013-10-22 23:48:58,974 [DEBUG] Emergency lock release
+2013-10-22 23:48:58,974 [DEBUG] woke up
+2013-10-22 23:48:59,974 [DEBUG] acquired lock
+2013-10-22 23:48:59,974 [DEBUG] Accepting connections
+2013-10-22 23:49:02,993 [WARNING] passive thread timed out
+2013-10-22 23:49:02,993 [DEBUG] Emergency lock release
+2013-10-22 23:49:02,993 [DEBUG] acquired lock
+2013-10-22 23:49:02,994 [DEBUG] Connecting to address 192.168.2.16
+2013-10-22 23:49:02,994 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-22 23:49:02,995 [DEBUG] Created connection to 192.168.2.16 at port 5001
+2013-10-22 23:49:02,998 [DEBUG] Received state 327, new state 477
+2013-10-22 23:49:02,998 [DEBUG] releasing lock
+2013-10-22 23:49:02,998 [DEBUG] Next epoch: 2
+2013-10-22 23:49:02,998 [DEBUG] sleeping for 11.0010890961
+2013-10-22 23:49:03,994 [DEBUG] acquired lock
+2013-10-22 23:49:03,994 [DEBUG] Accepting connections
+2013-10-22 23:49:07,004 [WARNING] passive thread timed out
+2013-10-22 23:49:07,004 [DEBUG] Emergency lock release
+2013-10-22 23:49:08,004 [DEBUG] acquired lock
+2013-10-22 23:49:08,004 [DEBUG] Accepting connections
+2013-10-22 23:49:11,014 [WARNING] passive thread timed out
+2013-10-22 23:49:11,014 [DEBUG] Emergency lock release
+2013-10-22 23:49:12,014 [DEBUG] acquired lock
+2013-10-22 23:49:12,014 [DEBUG] Accepting connections
+2013-10-22 23:49:14,014 [DEBUG] woke up
+2013-10-22 23:49:15,024 [WARNING] passive thread timed out
+2013-10-22 23:49:15,024 [DEBUG] Emergency lock release
+2013-10-22 23:49:15,024 [DEBUG] acquired lock
+2013-10-22 23:49:15,024 [DEBUG] Connecting to address 192.168.2.16
+2013-10-22 23:49:15,024 [DEBUG] connection exists, recreating socket
+2013-10-22 23:49:16,024 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-22 23:49:16,025 [DEBUG] Created connection to 192.168.2.16 at port 5001
+2013-10-22 23:49:16,025 [DEBUG] Received state 477, new state 477
+2013-10-22 23:49:16,026 [DEBUG] releasing lock
+2013-10-22 23:49:16,026 [DEBUG] Next epoch: 3
+2013-10-22 23:49:16,026 [DEBUG] sleeping for 12.9736618996
+2013-10-22 23:49:16,026 [DEBUG] acquired lock
+2013-10-22 23:49:16,027 [DEBUG] Accepting connections
+2013-10-22 23:49:19,034 [WARNING] passive thread timed out
+2013-10-22 23:49:19,034 [DEBUG] Emergency lock release
+2013-10-22 23:49:20,034 [DEBUG] acquired lock
+2013-10-22 23:49:20,034 [DEBUG] Accepting connections
+2013-10-22 23:49:23,044 [WARNING] passive thread timed out
+2013-10-22 23:49:23,044 [DEBUG] Emergency lock release
+2013-10-22 23:49:24,044 [DEBUG] acquired lock
+2013-10-22 23:49:24,044 [DEBUG] Accepting connections
+2013-10-22 23:49:27,054 [WARNING] passive thread timed out
+2013-10-22 23:49:27,054 [DEBUG] Emergency lock release
+2013-10-22 23:49:28,054 [DEBUG] acquired lock
+2013-10-22 23:49:28,054 [DEBUG] Accepting connections
+2013-10-22 23:49:29,004 [DEBUG] woke up
+2013-10-22 23:49:31,064 [WARNING] passive thread timed out
+2013-10-22 23:49:31,064 [DEBUG] Emergency lock release
+2013-10-22 23:49:31,064 [DEBUG] acquired lock
+2013-10-22 23:49:31,064 [DEBUG] Connecting to address 192.168.2.16
+2013-10-22 23:49:31,064 [DEBUG] connection exists, recreating socket
+2013-10-22 23:49:32,064 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-22 23:49:32,064 [DEBUG] Created connection to 192.168.2.16 at port 5001
+2013-10-22 23:49:35,074 [DEBUG] active thread timed out XXX
+2013-10-22 23:49:35,074 [DEBUG] Emergency lock release
+2013-10-22 23:49:35,074 [DEBUG] acquired lock
+2013-10-22 23:49:35,074 [DEBUG] Accepting connections
+2013-10-22 23:49:35,075 [DEBUG] Accepted connection from 192.168.2.10 at port 5002
+2013-10-22 23:49:35,075 [DEBUG] Received state 401, new state 439
+2013-10-22 23:49:35,075 [DEBUG] releasing lock
+2013-10-22 23:49:35,076 [DEBUG] acquired lock
+2013-10-22 23:49:35,076 [DEBUG] Accepting connections
+2013-10-22 23:49:36,077 [DEBUG] Next epoch: 4
+2013-10-22 23:49:36,077 [DEBUG] sleeping for 7.92251992226
+2013-10-22 23:49:38,084 [WARNING] passive thread timed out
+2013-10-22 23:49:38,084 [DEBUG] Emergency lock release
+2013-10-22 23:49:39,084 [DEBUG] acquired lock
+2013-10-22 23:49:39,084 [DEBUG] Accepting connections
+2013-10-22 23:49:42,086 [WARNING] passive thread timed out
+2013-10-22 23:49:42,086 [DEBUG] Emergency lock release
+2013-10-22 23:49:43,093 [DEBUG] acquired lock
+2013-10-22 23:49:43,094 [DEBUG] Accepting connections
+2013-10-22 23:49:44,014 [DEBUG] woke up
+2013-10-22 23:49:46,104 [WARNING] passive thread timed out
+2013-10-22 23:49:46,104 [DEBUG] Emergency lock release
+2013-10-22 23:49:46,104 [DEBUG] acquired lock
+2013-10-22 23:49:46,104 [DEBUG] Connecting to address 192.168.2.12
+2013-10-22 23:49:46,104 [DEBUG] connection exists, recreating socket
+2013-10-22 23:49:47,113 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-22 23:49:47,114 [DEBUG] Created connection to 192.168.2.12 at port 5001
+2013-10-22 23:49:47,114 [DEBUG] Received state 544, new state 491
+2013-10-22 23:49:47,114 [DEBUG] releasing lock
+2013-10-22 23:49:47,115 [DEBUG] Next epoch: 5
+2013-10-22 23:49:47,115 [DEBUG] sleeping for 11.8847789764
+2013-10-22 23:49:47,115 [DEBUG] acquired lock
+2013-10-22 23:49:47,116 [DEBUG] Accepting connections
+2013-10-22 23:49:47,116 [DEBUG] Accepted connection from 192.168.2.16 at port 5002
+2013-10-22 23:49:47,116 [DEBUG] Received state 434, new state 462
+2013-10-22 23:49:47,117 [DEBUG] releasing lock
+2013-10-22 23:49:47,117 [DEBUG] acquired lock
+2013-10-22 23:49:47,117 [DEBUG] Accepting connections
+2013-10-22 23:49:50,125 [WARNING] passive thread timed out
+2013-10-22 23:49:50,125 [DEBUG] Emergency lock release
+2013-10-22 23:49:51,134 [DEBUG] acquired lock
+2013-10-22 23:49:51,134 [DEBUG] Accepting connections
+2013-10-22 23:49:54,134 [WARNING] passive thread timed out
+2013-10-22 23:49:54,135 [DEBUG] Emergency lock release
+2013-10-22 23:49:55,144 [DEBUG] acquired lock
+2013-10-22 23:49:55,144 [DEBUG] Accepting connections
+2013-10-22 23:49:58,154 [WARNING] passive thread timed out
+2013-10-22 23:49:58,154 [DEBUG] Emergency lock release
+2013-10-22 23:49:59,014 [DEBUG] woke up
+2013-10-22 23:49:59,144 [DEBUG] acquired lock
+2013-10-22 23:49:59,145 [DEBUG] Accepting connections
+2013-10-22 23:50:02,171 [WARNING] passive thread timed out
+2013-10-22 23:50:02,171 [DEBUG] Emergency lock release
+2013-10-22 23:50:02,172 [DEBUG] acquired lock
+2013-10-22 23:50:02,172 [DEBUG] Connecting to address 192.168.2.12
+2013-10-22 23:50:02,172 [DEBUG] connection exists, recreating socket
+2013-10-22 23:50:03,176 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-22 23:50:03,176 [DEBUG] Created connection to 192.168.2.12 at port 5001
+2013-10-22 23:50:03,177 [DEBUG] Received state 457, new state 459
+2013-10-22 23:50:03,177 [DEBUG] releasing lock
+2013-10-22 23:50:03,177 [DEBUG] Next epoch: 6
+2013-10-22 23:50:03,178 [DEBUG] sleeping for 10.8219609261
+2013-10-22 23:50:03,178 [DEBUG] acquired lock
+2013-10-22 23:50:03,178 [DEBUG] Accepting connections
+2013-10-22 23:50:06,194 [WARNING] passive thread timed out
+2013-10-22 23:50:06,194 [DEBUG] Emergency lock release
+2013-10-22 23:50:07,194 [DEBUG] acquired lock
+2013-10-22 23:50:07,194 [DEBUG] Accepting connections
+2013-10-22 23:50:08,163 [DEBUG] Accepted connection from 192.168.2.10 at port 5002
+2013-10-22 23:50:08,163 [DEBUG] Received state 427, new state 443
+2013-10-22 23:50:08,163 [DEBUG] releasing lock
+2013-10-22 23:50:08,163 [DEBUG] acquired lock
+2013-10-22 23:50:08,164 [DEBUG] Accepting connections
+2013-10-22 23:50:11,164 [WARNING] passive thread timed out
+2013-10-22 23:50:11,164 [DEBUG] Emergency lock release
+2013-10-22 23:50:12,164 [DEBUG] acquired lock
+2013-10-22 23:50:12,164 [DEBUG] Accepting connections
+2013-10-22 23:50:14,014 [DEBUG] woke up
+2013-10-22 23:50:15,165 [WARNING] passive thread timed out
+2013-10-22 23:50:15,165 [DEBUG] Emergency lock release
+2013-10-22 23:50:16,174 [DEBUG] acquired lock
+2013-10-22 23:50:16,174 [DEBUG] Accepting connections
+2013-10-22 23:50:19,011 [DEBUG] Accepted connection from 192.168.2.25 at port 5002
+2013-10-22 23:50:19,011 [DEBUG] Received state 459, new state 451
+2013-10-22 23:50:19,012 [DEBUG] releasing lock
+2013-10-22 23:50:19,012 [DEBUG] acquired lock
+2013-10-22 23:50:19,012 [DEBUG] Accepting connections
+2013-10-22 23:50:19,203 [DEBUG] Accepted connection from 192.168.2.16 at port 5002
+2013-10-22 23:50:19,203 [DEBUG] Received state 448, new state 449
+2013-10-22 23:50:19,203 [DEBUG] releasing lock
+2013-10-22 23:50:19,203 [DEBUG] acquired lock
+2013-10-22 23:50:19,204 [DEBUG] Accepting connections
+2013-10-22 23:50:20,823 [DEBUG] Accepted connection from 192.168.2.10 at port 5002
+2013-10-22 23:50:20,823 [DEBUG] Received state 435, new state 442
+2013-10-22 23:50:20,824 [DEBUG] releasing lock
+2013-10-22 23:50:20,824 [DEBUG] acquired lock
+2013-10-22 23:50:20,824 [DEBUG] Accepting connections
+2013-10-22 23:50:23,824 [WARNING] passive thread timed out
+2013-10-22 23:50:23,824 [DEBUG] Emergency lock release
+2013-10-22 23:50:23,824 [DEBUG] acquired lock
+2013-10-22 23:50:23,824 [DEBUG] Connecting to address 192.168.2.12
+2013-10-22 23:50:23,825 [DEBUG] connection exists, recreating socket
+2013-10-22 23:50:24,824 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-22 23:50:24,824 [DEBUG] Created connection to 192.168.2.12 at port 5001
+2013-10-22 23:50:25,689 [DEBUG] Received state 443, new state 442
+2013-10-22 23:50:25,689 [DEBUG] releasing lock
+2013-10-22 23:50:25,689 [DEBUG] Next epoch: 7
+2013-10-22 23:50:25,689 [DEBUG] sleeping for 3.31016898155
+2013-10-22 23:50:25,690 [DEBUG] acquired lock
+2013-10-22 23:50:25,690 [DEBUG] Accepting connections
+2013-10-22 23:50:28,694 [WARNING] passive thread timed out
+2013-10-22 23:50:28,694 [DEBUG] Emergency lock release
+2013-10-22 23:50:29,004 [DEBUG] woke up
+2013-10-22 23:50:29,694 [DEBUG] acquired lock
+2013-10-22 23:50:29,694 [DEBUG] Accepting connections
+2013-10-22 23:50:31,233 [DEBUG] Accepted connection from 192.168.2.16 at port 5002
+2013-10-22 23:50:31,233 [DEBUG] Received state 449, new state 445
+2013-10-22 23:50:31,233 [DEBUG] releasing lock
+2013-10-22 23:50:31,234 [DEBUG] acquired lock
+2013-10-22 23:50:31,234 [DEBUG] Accepting connections
+2013-10-22 23:50:34,227 [WARNING] passive thread timed out
+2013-10-22 23:50:34,228 [DEBUG] Emergency lock release
+2013-10-22 23:50:34,228 [DEBUG] acquired lock
+2013-10-22 23:50:34,228 [DEBUG] Connecting to address 192.168.2.10
+2013-10-22 23:50:34,228 [DEBUG] connection exists, recreating socket
+2013-10-22 23:50:35,225 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-22 23:50:35,226 [DEBUG] Created connection to 192.168.2.10 at port 5001
+2013-10-22 23:50:35,330 [DEBUG] Received state 445, new state 445
+2013-10-22 23:50:35,330 [DEBUG] releasing lock
+2013-10-22 23:50:35,330 [DEBUG] Next epoch: 8
+2013-10-22 23:50:35,330 [DEBUG] sleeping for 8.66904711723
+2013-10-22 23:50:35,331 [DEBUG] acquired lock
+2013-10-22 23:50:35,332 [DEBUG] Accepting connections
+2013-10-22 23:50:38,339 [WARNING] passive thread timed out
+2013-10-22 23:50:38,339 [DEBUG] Emergency lock release
+2013-10-22 23:50:39,334 [DEBUG] acquired lock
+2013-10-22 23:50:39,334 [DEBUG] Accepting connections
+2013-10-22 23:50:42,354 [WARNING] passive thread timed out
+2013-10-22 23:50:42,354 [DEBUG] Emergency lock release
+2013-10-22 23:50:43,354 [DEBUG] acquired lock
+2013-10-22 23:50:43,354 [DEBUG] Accepting connections
+2013-10-22 23:50:43,994 [DEBUG] woke up
+2013-10-22 23:50:46,364 [WARNING] passive thread timed out
+2013-10-22 23:50:46,364 [DEBUG] Emergency lock release
+2013-10-22 23:50:46,364 [DEBUG] acquired lock
+2013-10-22 23:50:46,364 [DEBUG] Connecting to address 192.168.2.10
+2013-10-22 23:50:46,365 [DEBUG] connection exists, recreating socket
+2013-10-22 23:50:47,364 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-22 23:50:47,364 [DEBUG] Created connection to 192.168.2.10 at port 5001
+2013-10-22 23:50:50,374 [DEBUG] active thread timed out XXX
+2013-10-22 23:50:50,374 [DEBUG] Emergency lock release
+2013-10-22 23:50:50,374 [DEBUG] acquired lock
+2013-10-22 23:50:50,374 [DEBUG] Accepting connections
+2013-10-22 23:50:50,375 [DEBUG] Accepted connection from 192.168.2.16 at port 5002
+2013-10-22 23:50:50,375 [DEBUG] Received state 445, new state 445
+2013-10-22 23:50:50,375 [DEBUG] releasing lock
+2013-10-22 23:50:50,375 [DEBUG] acquired lock
+2013-10-22 23:50:50,375 [DEBUG] Accepting connections
+2013-10-22 23:50:50,376 [DEBUG] Accepted connection from 192.168.2.10 at port 5002
+2013-10-22 23:50:50,376 [DEBUG] Received state 440, new state 442
+2013-10-22 23:50:50,376 [DEBUG] releasing lock
+2013-10-22 23:50:50,376 [DEBUG] acquired lock
+2013-10-22 23:50:50,377 [DEBUG] Accepting connections
+2013-10-22 23:50:51,375 [DEBUG] Next epoch: 9
+2013-10-22 23:50:51,375 [DEBUG] sleeping for 7.62462091446
+2013-10-22 23:50:53,384 [WARNING] passive thread timed out
+2013-10-22 23:50:53,384 [DEBUG] Emergency lock release
+2013-10-22 23:50:54,384 [DEBUG] acquired lock
+2013-10-22 23:50:54,384 [DEBUG] Accepting connections
+2013-10-22 23:50:57,394 [WARNING] passive thread timed out
+2013-10-22 23:50:57,394 [DEBUG] Emergency lock release
+2013-10-22 23:50:58,394 [DEBUG] acquired lock
+2013-10-22 23:50:58,394 [DEBUG] Accepting connections
+2013-10-22 23:50:59,004 [DEBUG] woke up
+2013-10-22 23:51:01,411 [WARNING] passive thread timed out
+2013-10-22 23:51:01,411 [DEBUG] Emergency lock release
+2013-10-22 23:51:01,412 [DEBUG] acquired lock
+2013-10-22 23:51:01,412 [DEBUG] Connecting to address 192.168.2.12
+2013-10-22 23:51:01,412 [DEBUG] connection exists, recreating socket
+2013-10-22 23:51:02,414 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-22 23:51:02,414 [DEBUG] Created connection to 192.168.2.12 at port 5001
+2013-10-22 23:51:05,321 [DEBUG] Received state 449, new state 445
+2013-10-22 23:51:05,321 [DEBUG] releasing lock
+2013-10-22 23:51:05,321 [DEBUG] Next epoch: 10
+2013-10-22 23:51:05,321 [DEBUG] sleeping for 8.67816400528
+2013-10-22 23:51:05,322 [DEBUG] acquired lock
+2013-10-22 23:51:05,322 [DEBUG] Accepting connections
+2013-10-22 23:51:05,323 [DEBUG] Accepted connection from 192.168.2.12 at port 5002
+2013-10-22 23:51:05,323 [DEBUG] Received state 449, new state 447
+2013-10-22 23:51:05,323 [DEBUG] releasing lock
+2013-10-22 23:51:05,324 [DEBUG] acquired lock
+2013-10-22 23:51:05,324 [DEBUG] Accepting connections
+2013-10-22 23:51:05,324 [DEBUG] Accepted connection from 192.168.2.25 at port 5002
+2013-10-22 23:51:05,324 [DEBUG] Received state 485, new state 466
+2013-10-22 23:51:05,325 [DEBUG] releasing lock
+2013-10-22 23:51:05,325 [DEBUG] acquired lock
+2013-10-22 23:51:05,325 [DEBUG] Accepting connections
+2013-10-22 23:51:08,334 [WARNING] passive thread timed out
+2013-10-22 23:51:08,334 [DEBUG] Emergency lock release
+2013-10-22 23:51:09,334 [DEBUG] acquired lock
+2013-10-22 23:51:09,334 [DEBUG] Accepting connections
+2013-10-22 23:51:12,344 [WARNING] passive thread timed out
+2013-10-22 23:51:12,344 [DEBUG] Emergency lock release
+2013-10-22 23:51:13,344 [DEBUG] acquired lock
+2013-10-22 23:51:13,344 [DEBUG] Accepting connections
+2013-10-22 23:51:13,994 [DEBUG] woke up
+2013-10-22 23:51:16,354 [WARNING] passive thread timed out
+2013-10-22 23:51:16,354 [DEBUG] Emergency lock release
+2013-10-22 23:51:17,354 [DEBUG] acquired lock
+2013-10-22 23:51:17,354 [DEBUG] Accepting connections
+2013-10-22 23:51:17,366 [DEBUG] Accepted connection from 192.168.2.16 at port 5002
+2013-10-22 23:51:17,366 [DEBUG] Received state 443, new state 454
+2013-10-22 23:51:17,366 [DEBUG] releasing lock
+2013-10-22 23:51:17,366 [DEBUG] acquired lock
+2013-10-22 23:51:17,366 [DEBUG] Accepting connections
+2013-10-22 23:51:20,374 [WARNING] passive thread timed out
+2013-10-22 23:51:20,374 [DEBUG] Emergency lock release
+2013-10-22 23:51:20,374 [DEBUG] acquired lock
+2013-10-22 23:51:20,374 [DEBUG] Connecting to address 192.168.2.12
+2013-10-22 23:51:20,375 [DEBUG] connection exists, recreating socket
+2013-10-22 23:51:21,374 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-22 23:51:21,374 [DEBUG] Created connection to 192.168.2.12 at port 5001
+2013-10-22 23:51:21,375 [DEBUG] Received state 448, new state 451
+2013-10-22 23:51:21,376 [DEBUG] releasing lock
+2013-10-22 23:51:21,376 [DEBUG] Next epoch: 11
+2013-10-22 23:51:21,376 [DEBUG] sleeping for 7.62351989746
+2013-10-22 23:51:21,377 [DEBUG] acquired lock
+2013-10-22 23:51:21,377 [DEBUG] Accepting connections
+2013-10-22 23:51:24,384 [WARNING] passive thread timed out
+2013-10-22 23:51:24,384 [DEBUG] Emergency lock release
+2013-10-22 23:51:25,384 [DEBUG] acquired lock
+2013-10-22 23:51:25,384 [DEBUG] Accepting connections
+2013-10-22 23:51:28,394 [WARNING] passive thread timed out
+2013-10-22 23:51:28,394 [DEBUG] Emergency lock release
+2013-10-22 23:51:29,004 [DEBUG] woke up
+2013-10-22 23:51:29,394 [DEBUG] acquired lock
+2013-10-22 23:51:29,394 [DEBUG] Accepting connections
+2013-10-22 23:51:32,404 [WARNING] passive thread timed out
+2013-10-22 23:51:32,404 [DEBUG] Emergency lock release
+2013-10-22 23:51:32,404 [DEBUG] acquired lock
+2013-10-22 23:51:32,404 [DEBUG] Connecting to address 192.168.2.25
+2013-10-22 23:51:32,405 [DEBUG] connection exists, recreating socket
+2013-10-22 23:51:33,405 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-22 23:51:33,406 [DEBUG] Created connection to 192.168.2.25 at port 5001
+2013-10-22 23:51:34,408 [DEBUG] Received state 466, new state 458
+2013-10-22 23:51:34,408 [DEBUG] releasing lock
+2013-10-22 23:51:34,409 [DEBUG] Next epoch: 12
+2013-10-22 23:51:34,409 [DEBUG] sleeping for 9.59067606926
+2013-10-22 23:51:34,409 [DEBUG] acquired lock
+2013-10-22 23:51:34,410 [DEBUG] Accepting connections
+2013-10-22 23:51:37,408 [WARNING] passive thread timed out
+2013-10-22 23:51:37,409 [DEBUG] Emergency lock release
+2013-10-22 23:51:38,406 [DEBUG] acquired lock
+2013-10-22 23:51:38,406 [DEBUG] Accepting connections
+2013-10-22 23:51:41,424 [WARNING] passive thread timed out
+2013-10-22 23:51:41,424 [DEBUG] Emergency lock release
+2013-10-22 23:51:42,422 [DEBUG] acquired lock
+2013-10-22 23:51:42,422 [DEBUG] Accepting connections
+2013-10-22 23:51:43,994 [DEBUG] woke up
+2013-10-22 23:51:45,434 [WARNING] passive thread timed out
+2013-10-22 23:51:45,434 [DEBUG] Emergency lock release
+2013-10-22 23:51:45,434 [DEBUG] acquired lock
+2013-10-22 23:51:45,434 [DEBUG] Connecting to address 192.168.2.12
+2013-10-22 23:51:45,435 [DEBUG] connection exists, recreating socket
+2013-10-22 23:51:46,450 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-22 23:51:46,451 [DEBUG] Created connection to 192.168.2.12 at port 5001
+2013-10-22 23:51:46,452 [DEBUG] Received state 452, new state 455
+2013-10-22 23:51:46,452 [DEBUG] releasing lock
+2013-10-22 23:51:46,453 [DEBUG] Next epoch: 13
+2013-10-22 23:51:46,453 [DEBUG] sleeping for 12.5468349457
+2013-10-22 23:51:46,453 [DEBUG] acquired lock
+2013-10-22 23:51:46,453 [DEBUG] Accepting connections
+2013-10-22 23:51:46,454 [DEBUG] Accepted connection from 192.168.2.10 at port 5002
+2013-10-22 23:51:46,454 [DEBUG] Received state 448, new state 451
+2013-10-22 23:51:46,454 [DEBUG] releasing lock
+2013-10-22 23:51:46,454 [DEBUG] acquired lock
+2013-10-22 23:51:46,454 [DEBUG] Accepting connections
+2013-10-22 23:51:48,463 [DEBUG] Accepted connection from 192.168.2.16 at port 5002
+2013-10-22 23:51:48,463 [DEBUG] Received state 454, new state 452
+2013-10-22 23:51:48,463 [DEBUG] releasing lock
+2013-10-22 23:51:48,464 [DEBUG] acquired lock
+2013-10-22 23:51:48,464 [DEBUG] Accepting connections
+2013-10-22 23:51:51,461 [WARNING] passive thread timed out
+2013-10-22 23:51:51,462 [DEBUG] Emergency lock release
+2013-10-22 23:51:52,455 [DEBUG] acquired lock
+2013-10-22 23:51:52,455 [DEBUG] Accepting connections
+2013-10-22 23:51:53,448 [DEBUG] Accepted connection from 192.168.2.12 at port 5002
+2013-10-22 23:51:53,449 [DEBUG] Received state 453, new state 452
+2013-10-22 23:51:53,449 [DEBUG] releasing lock
+2013-10-22 23:51:53,449 [DEBUG] acquired lock
+2013-10-22 23:51:53,449 [DEBUG] Accepting connections
+2013-10-22 23:51:56,464 [WARNING] passive thread timed out
+2013-10-22 23:51:56,464 [DEBUG] Emergency lock release
+2013-10-22 23:51:57,465 [DEBUG] acquired lock
+2013-10-22 23:51:57,465 [DEBUG] Accepting connections
+2013-10-22 23:51:59,005 [DEBUG] woke up
+2013-10-22 23:52:00,484 [WARNING] passive thread timed out
+2013-10-22 23:52:00,484 [DEBUG] Emergency lock release
+2013-10-22 23:52:00,894 [DEBUG] acquired lock
+2013-10-22 23:52:00,894 [DEBUG] Connecting to address 192.168.2.12
+2013-10-22 23:52:00,894 [DEBUG] connection exists, recreating socket
+2013-10-22 23:52:01,894 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-22 23:52:01,894 [DEBUG] Created connection to 192.168.2.12 at port 5001
+2013-10-22 23:52:01,895 [DEBUG] Received state 456, new state 454
+2013-10-22 23:52:01,895 [DEBUG] releasing lock
+2013-10-22 23:52:01,895 [DEBUG] Next epoch: 14
+2013-10-22 23:52:01,896 [DEBUG] sleeping for 12.1038999557
+2013-10-22 23:52:01,896 [DEBUG] acquired lock
+2013-10-22 23:52:01,896 [DEBUG] Accepting connections
+2013-10-22 23:52:04,904 [WARNING] passive thread timed out
+2013-10-22 23:52:04,904 [DEBUG] Emergency lock release
+2013-10-22 23:52:05,904 [DEBUG] acquired lock
+2013-10-22 23:52:05,904 [DEBUG] Accepting connections
+2013-10-22 23:52:08,914 [WARNING] passive thread timed out
+2013-10-22 23:52:08,915 [DEBUG] Emergency lock release
+2013-10-22 23:52:09,924 [DEBUG] acquired lock
+2013-10-22 23:52:09,924 [DEBUG] Accepting connections
+2013-10-22 23:52:12,934 [WARNING] passive thread timed out
+2013-10-22 23:52:12,934 [DEBUG] Emergency lock release
+2013-10-22 23:52:13,934 [DEBUG] acquired lock
+2013-10-22 23:52:13,934 [DEBUG] Accepting connections
+2013-10-22 23:52:14,004 [DEBUG] woke up
+2013-10-22 23:52:16,944 [WARNING] passive thread timed out
+2013-10-22 23:52:16,944 [DEBUG] Emergency lock release
+2013-10-22 23:52:16,994 [DEBUG] acquired lock
+2013-10-22 23:52:16,994 [DEBUG] Connecting to address 192.168.2.12
+2013-10-22 23:52:16,994 [DEBUG] connection exists, recreating socket
+2013-10-22 23:52:17,994 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-22 23:52:17,994 [DEBUG] Created connection to 192.168.2.12 at port 5001
+2013-10-22 23:52:17,995 [DEBUG] Received state 455, new state 454
+2013-10-22 23:52:17,996 [DEBUG] releasing lock
+2013-10-22 23:52:17,996 [DEBUG] Next epoch: 15
+2013-10-22 23:52:17,996 [DEBUG] sleeping for 11.0035710335
+2013-10-22 23:52:17,997 [DEBUG] acquired lock
+2013-10-22 23:52:17,997 [DEBUG] Accepting connections
+2013-10-22 23:52:17,997 [DEBUG] Accepted connection from 192.168.2.25 at port 5002
+2013-10-22 23:52:17,998 [DEBUG] Received state 468, new state 461
+2013-10-22 23:52:17,998 [DEBUG] releasing lock
+2013-10-22 23:52:17,998 [DEBUG] acquired lock
+2013-10-22 23:52:17,998 [DEBUG] Accepting connections
+2013-10-22 23:52:21,004 [WARNING] passive thread timed out
+2013-10-22 23:52:21,004 [DEBUG] Emergency lock release
+2013-10-22 23:52:22,004 [DEBUG] acquired lock
+2013-10-22 23:52:22,004 [DEBUG] Accepting connections
+2013-10-22 23:52:25,014 [WARNING] passive thread timed out
+2013-10-22 23:52:25,014 [DEBUG] Emergency lock release
+2013-10-22 23:52:26,014 [DEBUG] acquired lock
+2013-10-22 23:52:26,014 [DEBUG] Accepting connections
+2013-10-22 23:52:29,004 [DEBUG] woke up
+2013-10-22 23:52:29,024 [WARNING] passive thread timed out
+2013-10-22 23:52:29,024 [DEBUG] Emergency lock release
+2013-10-22 23:52:30,024 [DEBUG] acquired lock
+2013-10-22 23:52:30,024 [DEBUG] Accepting connections
+2013-10-22 23:52:31,000 [DEBUG] Accepted connection from 192.168.2.12 at port 5002
+2013-10-22 23:52:31,000 [DEBUG] Received state 453, new state 457
+2013-10-22 23:52:31,000 [DEBUG] releasing lock
+2013-10-22 23:52:31,001 [DEBUG] acquired lock
+2013-10-22 23:52:31,001 [DEBUG] Accepting connections
+2013-10-22 23:52:34,004 [WARNING] passive thread timed out
+2013-10-22 23:52:34,004 [DEBUG] Emergency lock release
+2013-10-22 23:52:34,004 [DEBUG] acquired lock
+2013-10-22 23:52:34,004 [DEBUG] Connecting to address 192.168.2.12
+2013-10-22 23:52:34,004 [DEBUG] connection exists, recreating socket
+2013-10-22 23:52:35,004 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-22 23:52:35,004 [DEBUG] Created connection to 192.168.2.12 at port 5001
+2013-10-22 23:52:35,005 [DEBUG] Received state 454, new state 455
+2013-10-22 23:52:35,005 [DEBUG] releasing lock
+2013-10-22 23:52:35,005 [DEBUG] Next epoch: 16
+2013-10-22 23:52:35,006 [DEBUG] sleeping for 8.99395895004
+2013-10-22 23:52:35,006 [DEBUG] acquired lock
+2013-10-22 23:52:35,006 [DEBUG] Accepting connections
+2013-10-22 23:52:38,014 [WARNING] passive thread timed out
+2013-10-22 23:52:38,014 [DEBUG] Emergency lock release
+2013-10-22 23:52:39,005 [DEBUG] acquired lock
+2013-10-22 23:52:39,005 [DEBUG] Accepting connections
+2013-10-22 23:52:42,016 [WARNING] passive thread timed out
+2013-10-22 23:52:42,016 [DEBUG] Emergency lock release
+2013-10-22 23:52:43,024 [DEBUG] acquired lock
+2013-10-22 23:52:43,024 [DEBUG] Accepting connections
+2013-10-22 23:52:44,004 [DEBUG] woke up
+2013-10-22 23:52:46,034 [WARNING] passive thread timed out
+2013-10-22 23:52:46,034 [DEBUG] Emergency lock release
+2013-10-22 23:52:46,304 [DEBUG] acquired lock
+2013-10-22 23:52:46,304 [DEBUG] Connecting to address 192.168.2.12
+2013-10-22 23:52:46,304 [DEBUG] connection exists, recreating socket
+2013-10-22 23:52:47,304 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-22 23:52:47,304 [DEBUG] Created connection to 192.168.2.12 at port 5001
+2013-10-22 23:52:47,305 [DEBUG] Received state 455, new state 455
+2013-10-22 23:52:47,305 [DEBUG] releasing lock
+2013-10-22 23:52:47,306 [DEBUG] Next epoch: 17
+2013-10-22 23:52:47,306 [DEBUG] sleeping for 11.6937940121
+2013-10-22 23:52:47,306 [DEBUG] acquired lock
+2013-10-22 23:52:47,306 [DEBUG] Accepting connections
+2013-10-22 23:52:50,314 [WARNING] passive thread timed out
+2013-10-22 23:52:50,314 [DEBUG] Emergency lock release
+2013-10-22 23:52:51,314 [DEBUG] acquired lock
+2013-10-22 23:52:51,314 [DEBUG] Accepting connections
+2013-10-22 23:52:54,324 [WARNING] passive thread timed out
+2013-10-22 23:52:54,324 [DEBUG] Emergency lock release
+2013-10-22 23:52:55,324 [DEBUG] acquired lock
+2013-10-22 23:52:55,324 [DEBUG] Accepting connections
+2013-10-22 23:52:58,334 [WARNING] passive thread timed out
+2013-10-22 23:52:58,334 [DEBUG] Emergency lock release
+2013-10-22 23:52:59,004 [DEBUG] woke up
+2013-10-22 23:52:59,024 [DEBUG] acquired lock
+2013-10-22 23:52:59,024 [DEBUG] Connecting to address 192.168.2.10
+2013-10-22 23:52:59,024 [DEBUG] connection exists, recreating socket
+2013-10-22 23:53:00,024 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-22 23:53:00,024 [DEBUG] Created connection to 192.168.2.10 at port 5001
+2013-10-22 23:53:00,025 [DEBUG] Received state 448, new state 451
+2013-10-22 23:53:00,026 [DEBUG] releasing lock
+2013-10-22 23:53:00,026 [DEBUG] Next epoch: 18
+2013-10-22 23:53:00,026 [DEBUG] sleeping for 13.9736640453
+2013-10-22 23:53:00,026 [DEBUG] acquired lock
+2013-10-22 23:53:00,026 [DEBUG] Accepting connections
+2013-10-22 23:53:03,034 [WARNING] passive thread timed out
+2013-10-22 23:53:03,034 [DEBUG] Emergency lock release
+2013-10-22 23:53:04,034 [DEBUG] acquired lock
+2013-10-22 23:53:04,034 [DEBUG] Accepting connections
+2013-10-22 23:53:07,044 [WARNING] passive thread timed out
+2013-10-22 23:53:07,044 [DEBUG] Emergency lock release
+2013-10-22 23:53:08,044 [DEBUG] acquired lock
+2013-10-22 23:53:08,044 [DEBUG] Accepting connections
+2013-10-22 23:53:11,054 [WARNING] passive thread timed out
+2013-10-22 23:53:11,054 [DEBUG] Emergency lock release
+2013-10-22 23:53:12,054 [DEBUG] acquired lock
+2013-10-22 23:53:12,054 [DEBUG] Accepting connections
+2013-10-22 23:53:14,004 [DEBUG] woke up
+2013-10-22 23:53:15,064 [WARNING] passive thread timed out
+2013-10-22 23:53:15,064 [DEBUG] Emergency lock release
+2013-10-22 23:53:16,064 [DEBUG] acquired lock
+2013-10-22 23:53:16,064 [DEBUG] Accepting connections
+2013-10-22 23:53:18,683 [DEBUG] Accepted connection from 192.168.2.16 at port 5002
+2013-10-22 23:53:18,683 [DEBUG] Received state 449, new state 450
+2013-10-22 23:53:18,683 [DEBUG] releasing lock
+2013-10-22 23:53:18,683 [DEBUG] acquired lock
+2013-10-22 23:53:18,684 [DEBUG] Accepting connections
+2013-10-22 23:53:18,722 [DEBUG] Accepted connection from 192.168.2.25 at port 5002
+2013-10-22 23:53:18,722 [DEBUG] Received state 454, new state 452
+2013-10-22 23:53:18,722 [DEBUG] releasing lock
+2013-10-22 23:53:18,722 [DEBUG] acquired lock
+2013-10-22 23:53:18,722 [DEBUG] Accepting connections
+2013-10-22 23:53:21,724 [WARNING] passive thread timed out
+2013-10-22 23:53:21,724 [DEBUG] Emergency lock release
+2013-10-22 23:53:21,724 [DEBUG] acquired lock
+2013-10-22 23:53:21,725 [DEBUG] Connecting to address 192.168.2.25
+2013-10-22 23:53:21,725 [DEBUG] connection exists, recreating socket
+2013-10-22 23:53:22,724 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-22 23:53:22,724 [DEBUG] Created connection to 192.168.2.25 at port 5001
+2013-10-22 23:53:22,751 [DEBUG] Received state 456, new state 454
+2013-10-22 23:53:22,751 [DEBUG] releasing lock
+2013-10-22 23:53:22,751 [DEBUG] Next epoch: 19
+2013-10-22 23:53:22,752 [DEBUG] sleeping for 6.24802398682
+2013-10-22 23:53:22,752 [DEBUG] acquired lock
+2013-10-22 23:53:22,752 [DEBUG] Accepting connections
+2013-10-22 23:53:25,754 [WARNING] passive thread timed out
+2013-10-22 23:53:25,754 [DEBUG] Emergency lock release
+2013-10-22 23:53:26,754 [DEBUG] acquired lock
+2013-10-22 23:53:26,754 [DEBUG] Accepting connections
+2013-10-22 23:53:28,994 [DEBUG] woke up
+2013-10-22 23:53:29,764 [WARNING] passive thread timed out
+2013-10-22 23:53:29,764 [DEBUG] Emergency lock release
+2013-10-22 23:53:30,764 [DEBUG] acquired lock
+2013-10-22 23:53:30,764 [DEBUG] Accepting connections
+2013-10-22 23:53:33,775 [WARNING] passive thread timed out
+2013-10-22 23:53:33,775 [DEBUG] Emergency lock release
+2013-10-22 23:53:33,775 [DEBUG] acquired lock
+2013-10-22 23:53:33,775 [DEBUG] Connecting to address 192.168.2.16
+2013-10-22 23:53:33,776 [DEBUG] connection exists, recreating socket
+2013-10-22 23:53:34,788 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-22 23:53:34,788 [DEBUG] Created connection to 192.168.2.16 at port 5001
+2013-10-22 23:53:34,789 [DEBUG] Received state 448, new state 451
+2013-10-22 23:53:34,790 [DEBUG] releasing lock
+2013-10-22 23:53:34,790 [DEBUG] acquired lock
+2013-10-22 23:53:34,790 [DEBUG] Accepting connections
+2013-10-22 23:53:34,791 [DEBUG] Next epoch: 20
+2013-10-22 23:53:34,791 [DEBUG] sleeping for 9.20880508423
+2013-10-22 23:53:37,798 [WARNING] passive thread timed out
+2013-10-22 23:53:37,798 [DEBUG] Emergency lock release
+2013-10-22 23:53:38,806 [DEBUG] acquired lock
+2013-10-22 23:53:38,806 [DEBUG] Accepting connections
+2013-10-22 23:53:41,824 [WARNING] passive thread timed out
+2013-10-22 23:53:41,824 [DEBUG] Emergency lock release
+2013-10-22 23:53:42,824 [DEBUG] acquired lock
+2013-10-22 23:53:42,824 [DEBUG] Accepting connections
+2013-10-22 23:53:44,004 [DEBUG] woke up
+2013-10-22 23:53:45,834 [WARNING] passive thread timed out
+2013-10-22 23:53:45,834 [DEBUG] Emergency lock release
+2013-10-22 23:53:46,834 [DEBUG] acquired lock
+2013-10-22 23:53:46,834 [DEBUG] Accepting connections
+2013-10-22 23:53:49,811 [DEBUG] Accepted connection from 192.168.2.25 at port 5002
+2013-10-22 23:53:49,811 [DEBUG] Received state 461, new state 456
+2013-10-22 23:53:49,812 [DEBUG] releasing lock
+2013-10-22 23:53:49,812 [DEBUG] acquired lock
+2013-10-22 23:53:49,812 [DEBUG] Accepting connections
+2013-10-22 23:53:52,814 [WARNING] passive thread timed out
+2013-10-22 23:53:52,814 [DEBUG] Emergency lock release
+2013-10-22 23:53:52,814 [DEBUG] acquired lock
+2013-10-22 23:53:52,814 [DEBUG] Connecting to address 192.168.2.25
+2013-10-22 23:53:52,814 [DEBUG] connection exists, recreating socket
+2013-10-22 23:53:53,814 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-22 23:53:53,815 [DEBUG] Created connection to 192.168.2.25 at port 5001
+2013-10-22 23:53:53,826 [DEBUG] Received state 456, new state 456
+2013-10-22 23:53:53,826 [DEBUG] releasing lock
+2013-10-22 23:53:53,827 [DEBUG] acquired lock
+2013-10-22 23:53:53,827 [DEBUG] Accepting connections
+2013-10-22 23:53:53,827 [DEBUG] Next epoch: 21
+2013-10-22 23:53:53,828 [DEBUG] sleeping for 5.17184400558
+2013-10-22 23:53:56,844 [WARNING] passive thread timed out
+2013-10-22 23:53:56,844 [DEBUG] Emergency lock release
+2013-10-22 23:53:57,844 [DEBUG] acquired lock
+2013-10-22 23:53:57,844 [DEBUG] Accepting connections
+2013-10-22 23:53:59,014 [DEBUG] woke up
+2013-10-22 23:54:00,854 [WARNING] passive thread timed out
+2013-10-22 23:54:00,854 [DEBUG] Emergency lock release
+2013-10-22 23:54:01,854 [DEBUG] acquired lock
+2013-10-22 23:54:01,854 [DEBUG] Accepting connections
+2013-10-22 23:54:04,869 [WARNING] passive thread timed out
+2013-10-22 23:54:04,869 [DEBUG] Emergency lock release
+2013-10-22 23:54:04,869 [DEBUG] acquired lock
+2013-10-22 23:54:04,870 [DEBUG] Connecting to address 192.168.2.12
+2013-10-22 23:54:04,870 [DEBUG] connection exists, recreating socket
+2013-10-22 23:54:05,874 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-22 23:54:05,874 [DEBUG] Created connection to 192.168.2.12 at port 5001
+2013-10-22 23:54:05,875 [DEBUG] Received state 458, new state 457
+2013-10-22 23:54:05,875 [DEBUG] releasing lock
+2013-10-22 23:54:05,876 [DEBUG] acquired lock
+2013-10-22 23:54:05,876 [DEBUG] Accepting connections
+2013-10-22 23:54:05,876 [DEBUG] Next epoch: 22
+2013-10-22 23:54:05,876 [DEBUG] sleeping for 8.12303709984
+2013-10-22 23:54:06,293 [DEBUG] Accepted connection from 192.168.2.16 at port 5002
+2013-10-22 23:54:06,293 [DEBUG] Received state 449, new state 453
+2013-10-22 23:54:06,293 [DEBUG] releasing lock
+2013-10-22 23:54:06,293 [DEBUG] acquired lock
+2013-10-22 23:54:06,293 [DEBUG] Accepting connections
+2013-10-22 23:54:09,294 [WARNING] passive thread timed out
+2013-10-22 23:54:09,294 [DEBUG] Emergency lock release
+2013-10-22 23:54:10,294 [DEBUG] acquired lock
+2013-10-22 23:54:10,294 [DEBUG] Accepting connections
+2013-10-22 23:54:13,304 [WARNING] passive thread timed out
+2013-10-22 23:54:13,304 [DEBUG] Emergency lock release
+2013-10-22 23:54:14,004 [DEBUG] woke up
+2013-10-22 23:54:14,304 [DEBUG] acquired lock
+2013-10-22 23:54:14,304 [DEBUG] Accepting connections
+2013-10-22 23:54:17,314 [WARNING] passive thread timed out
+2013-10-22 23:54:17,314 [DEBUG] Emergency lock release
+2013-10-22 23:54:17,314 [DEBUG] acquired lock
+2013-10-22 23:54:17,314 [DEBUG] Connecting to address 192.168.2.10
+2013-10-22 23:54:17,315 [DEBUG] connection exists, recreating socket
+2013-10-22 23:54:18,314 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-22 23:54:18,315 [DEBUG] Created connection to 192.168.2.10 at port 5001
+2013-10-22 23:54:21,324 [DEBUG] active thread timed out XXX
+2013-10-22 23:54:21,324 [DEBUG] Emergency lock release
+2013-10-22 23:54:21,324 [DEBUG] acquired lock
+2013-10-22 23:54:21,324 [DEBUG] Accepting connections
+2013-10-22 23:54:22,324 [DEBUG] Next epoch: 23
+2013-10-22 23:54:22,324 [DEBUG] sleeping for 6.67555403709
+2013-10-22 23:54:24,334 [WARNING] passive thread timed out
+2013-10-22 23:54:24,334 [DEBUG] Emergency lock release
+2013-10-22 23:54:25,344 [DEBUG] acquired lock
+2013-10-22 23:54:25,344 [DEBUG] Accepting connections
+2013-10-22 23:54:28,345 [WARNING] passive thread timed out
+2013-10-22 23:54:28,345 [DEBUG] Emergency lock release
+2013-10-22 23:54:29,004 [DEBUG] woke up
+2013-10-22 23:54:29,344 [DEBUG] acquired lock
+2013-10-22 23:54:29,344 [DEBUG] Accepting connections
+2013-10-22 23:54:30,253 [DEBUG] Accepted connection from 192.168.2.16 at port 5002
+2013-10-22 23:54:30,253 [DEBUG] Received state 453, new state 453
+2013-10-22 23:54:30,253 [DEBUG] releasing lock
+2013-10-22 23:54:30,253 [DEBUG] acquired lock
+2013-10-22 23:54:30,254 [DEBUG] Accepting connections
+2013-10-22 23:54:33,254 [WARNING] passive thread timed out
+2013-10-22 23:54:33,254 [DEBUG] Emergency lock release
+2013-10-22 23:54:33,254 [DEBUG] acquired lock
+2013-10-22 23:54:33,254 [DEBUG] Connecting to address 192.168.2.25
+2013-10-22 23:54:33,254 [DEBUG] connection exists, recreating socket
+2013-10-22 23:54:34,254 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-22 23:54:34,254 [DEBUG] Created connection to 192.168.2.25 at port 5001
+2013-10-22 23:54:34,255 [DEBUG] Received state 453, new state 453
+2013-10-22 23:54:34,255 [DEBUG] releasing lock
+2013-10-22 23:54:34,256 [DEBUG] Next epoch: 24
+2013-10-22 23:54:34,256 [DEBUG] sleeping for 9.7437338829
+2013-10-22 23:54:34,256 [DEBUG] acquired lock
+2013-10-22 23:54:34,256 [DEBUG] Accepting connections
+2013-10-22 23:54:37,264 [WARNING] passive thread timed out
+2013-10-22 23:54:37,264 [DEBUG] Emergency lock release
+2013-10-22 23:54:38,264 [DEBUG] acquired lock
+2013-10-22 23:54:38,264 [DEBUG] Accepting connections
+2013-10-22 23:54:41,274 [WARNING] passive thread timed out
+2013-10-22 23:54:41,274 [DEBUG] Emergency lock release
+2013-10-22 23:54:42,274 [DEBUG] acquired lock
+2013-10-22 23:54:42,274 [DEBUG] Accepting connections
+2013-10-22 23:54:44,004 [DEBUG] woke up
+2013-10-22 23:54:45,284 [WARNING] passive thread timed out
+2013-10-22 23:54:45,284 [DEBUG] Emergency lock release
+2013-10-22 23:54:46,284 [DEBUG] acquired lock
+2013-10-22 23:54:46,284 [DEBUG] Accepting connections
+2013-10-22 23:54:46,303 [DEBUG] Accepted connection from 192.168.2.16 at port 5002
+2013-10-22 23:54:46,303 [DEBUG] Received state 451, new state 452
+2013-10-22 23:54:46,303 [DEBUG] releasing lock
+2013-10-22 23:54:46,303 [DEBUG] acquired lock
+2013-10-22 23:54:46,304 [DEBUG] Accepting connections
+2013-10-22 23:54:49,314 [WARNING] passive thread timed out
+2013-10-22 23:54:49,314 [DEBUG] Emergency lock release
+2013-10-22 23:54:49,314 [DEBUG] acquired lock
+2013-10-22 23:54:49,314 [DEBUG] Connecting to address 192.168.2.10
+2013-10-22 23:54:49,315 [DEBUG] connection exists, recreating socket
+2013-10-22 23:54:50,314 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-22 23:54:50,315 [DEBUG] Created connection to 192.168.2.10 at port 5001
+2013-10-22 23:54:50,315 [DEBUG] Received state 443, new state 447
+2013-10-22 23:54:50,316 [DEBUG] releasing lock
+2013-10-22 23:54:50,316 [DEBUG] Next epoch: 25
+2013-10-22 23:54:50,316 [DEBUG] sleeping for 8.68358492851
+2013-10-22 23:54:50,316 [DEBUG] acquired lock
+2013-10-22 23:54:50,317 [DEBUG] Accepting connections
+2013-10-22 23:54:53,324 [WARNING] passive thread timed out
+2013-10-22 23:54:53,324 [DEBUG] Emergency lock release
+2013-10-22 23:54:54,324 [DEBUG] acquired lock
+2013-10-22 23:54:54,324 [DEBUG] Accepting connections
+2013-10-22 23:54:57,334 [WARNING] passive thread timed out
+2013-10-22 23:54:57,334 [DEBUG] Emergency lock release
+2013-10-22 23:54:58,334 [DEBUG] acquired lock
+2013-10-22 23:54:58,334 [DEBUG] Accepting connections
+2013-10-22 23:54:59,004 [DEBUG] woke up
+2013-10-22 23:55:01,344 [WARNING] passive thread timed out
+2013-10-22 23:55:01,344 [DEBUG] Emergency lock release
+2013-10-22 23:55:01,344 [DEBUG] acquired lock
+2013-10-22 23:55:01,344 [DEBUG] Connecting to address 192.168.2.16
+2013-10-22 23:55:01,344 [DEBUG] connection exists, recreating socket
+2013-10-22 23:55:02,344 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-22 23:55:02,344 [DEBUG] Created connection to 192.168.2.16 at port 5001
+2013-10-22 23:55:03,162 [DEBUG] Received state 449, new state 448
+2013-10-22 23:55:03,163 [DEBUG] releasing lock
+2013-10-22 23:55:03,163 [DEBUG] Next epoch: 26
+2013-10-22 23:55:03,163 [DEBUG] sleeping for 10.8364028931
+2013-10-22 23:55:03,164 [DEBUG] acquired lock
+2013-10-22 23:55:03,164 [DEBUG] Accepting connections
+2013-10-22 23:55:06,164 [WARNING] passive thread timed out
+2013-10-22 23:55:06,164 [DEBUG] Emergency lock release
+2013-10-22 23:55:07,167 [DEBUG] acquired lock
+2013-10-22 23:55:07,167 [DEBUG] Accepting connections
+2013-10-22 23:55:10,184 [WARNING] passive thread timed out
+2013-10-22 23:55:10,184 [DEBUG] Emergency lock release
+2013-10-22 23:55:11,184 [DEBUG] acquired lock
+2013-10-22 23:55:11,184 [DEBUG] Accepting connections
+2013-10-22 23:55:13,994 [DEBUG] woke up
+2013-10-22 23:55:14,194 [WARNING] passive thread timed out
+2013-10-22 23:55:14,194 [DEBUG] Emergency lock release
+2013-10-22 23:55:15,194 [DEBUG] acquired lock
+2013-10-22 23:55:15,194 [DEBUG] Accepting connections
+2013-10-22 23:55:18,204 [WARNING] passive thread timed out
+2013-10-22 23:55:18,204 [DEBUG] Emergency lock release
+2013-10-22 23:55:18,204 [DEBUG] acquired lock
+2013-10-22 23:55:18,204 [DEBUG] Connecting to address 192.168.2.25
+2013-10-22 23:55:18,205 [DEBUG] connection exists, recreating socket
+2013-10-22 23:55:19,209 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-22 23:55:19,209 [DEBUG] Created connection to 192.168.2.25 at port 5001
+2013-10-22 23:55:19,210 [DEBUG] Received state 449, new state 448
+2013-10-22 23:55:19,210 [DEBUG] releasing lock
+2013-10-22 23:55:19,210 [DEBUG] Next epoch: 27
+2013-10-22 23:55:19,211 [DEBUG] sleeping for 9.78896093369
+2013-10-22 23:55:19,211 [DEBUG] acquired lock
+2013-10-22 23:55:19,211 [DEBUG] Accepting connections
+2013-10-22 23:55:19,212 [DEBUG] Accepted connection from 192.168.2.10 at port 5002
+2013-10-22 23:55:19,212 [DEBUG] Received state 449, new state 448
+2013-10-22 23:55:19,212 [DEBUG] releasing lock
+2013-10-22 23:55:19,212 [DEBUG] acquired lock
+2013-10-22 23:55:19,213 [DEBUG] Accepting connections
+2013-10-22 23:55:19,213 [DEBUG] Accepted connection from 192.168.2.16 at port 5002
+2013-10-22 23:55:19,213 [DEBUG] Received state 448, new state 448
+2013-10-22 23:55:19,213 [DEBUG] releasing lock
+2013-10-22 23:55:19,214 [DEBUG] acquired lock
+2013-10-22 23:55:19,214 [DEBUG] Accepting connections
+2013-10-22 23:55:22,224 [WARNING] passive thread timed out
+2013-10-22 23:55:22,224 [DEBUG] Emergency lock release
+2013-10-22 23:55:23,231 [DEBUG] acquired lock
+2013-10-22 23:55:23,231 [DEBUG] Accepting connections
+2013-10-22 23:55:23,232 [DEBUG] Accepted connection from 192.168.2.25 at port 5002
+2013-10-22 23:55:23,232 [DEBUG] Received state 448, new state 448
+2013-10-22 23:55:23,232 [DEBUG] releasing lock
+2013-10-22 23:55:23,232 [DEBUG] acquired lock
+2013-10-22 23:55:23,232 [DEBUG] Accepting connections
+2013-10-22 23:55:26,244 [WARNING] passive thread timed out
+2013-10-22 23:55:26,244 [DEBUG] Emergency lock release
+2013-10-22 23:55:27,244 [DEBUG] acquired lock
+2013-10-22 23:55:27,244 [DEBUG] Accepting connections
+2013-10-22 23:55:29,004 [DEBUG] woke up
+2013-10-22 23:55:30,254 [WARNING] passive thread timed out
+2013-10-22 23:55:30,254 [DEBUG] Emergency lock release
+2013-10-22 23:55:31,254 [DEBUG] acquired lock
+2013-10-22 23:55:31,254 [DEBUG] Accepting connections
+2013-10-22 23:55:31,773 [DEBUG] Accepted connection from 192.168.2.16 at port 5002
+2013-10-22 23:55:31,773 [DEBUG] Received state 448, new state 448
+2013-10-22 23:55:31,773 [DEBUG] releasing lock
+2013-10-22 23:55:31,773 [DEBUG] acquired lock
+2013-10-22 23:55:31,774 [DEBUG] Accepting connections
+2013-10-22 23:55:34,765 [WARNING] passive thread timed out
+2013-10-22 23:55:34,765 [DEBUG] Emergency lock release
+2013-10-22 23:55:34,765 [DEBUG] acquired lock
+2013-10-22 23:55:34,765 [DEBUG] Connecting to address 192.168.2.12
+2013-10-22 23:55:34,765 [DEBUG] connection exists, recreating socket
+2013-10-22 23:55:35,765 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-22 23:55:35,765 [DEBUG] Created connection to 192.168.2.12 at port 5001
+2013-10-22 23:55:38,679 [DEBUG] Received state 454, new state 451
+2013-10-22 23:55:38,680 [DEBUG] releasing lock
+2013-10-22 23:55:38,680 [DEBUG] Next epoch: 28
+2013-10-22 23:55:38,680 [DEBUG] sleeping for 5.31962203979
+2013-10-22 23:55:38,680 [DEBUG] acquired lock
+2013-10-22 23:55:38,681 [DEBUG] Accepting connections
+2013-10-22 23:55:38,681 [DEBUG] Accepted connection from 192.168.2.12 at port 5002
+2013-10-22 23:55:38,681 [DEBUG] Received state 454, new state 452
+2013-10-22 23:55:38,682 [DEBUG] releasing lock
+2013-10-22 23:55:38,682 [DEBUG] acquired lock
+2013-10-22 23:55:38,682 [DEBUG] Accepting connections
+2013-10-22 23:55:41,694 [WARNING] passive thread timed out
+2013-10-22 23:55:41,694 [DEBUG] Emergency lock release
+2013-10-22 23:55:42,699 [DEBUG] acquired lock
+2013-10-22 23:55:42,699 [DEBUG] Accepting connections
+2013-10-22 23:55:44,004 [DEBUG] woke up
+2013-10-22 23:55:45,714 [WARNING] passive thread timed out
+2013-10-22 23:55:45,714 [DEBUG] Emergency lock release
+2013-10-22 23:55:46,384 [DEBUG] acquired lock
+2013-10-22 23:55:46,384 [DEBUG] Connecting to address 192.168.2.25
+2013-10-22 23:55:46,384 [DEBUG] connection exists, recreating socket
+2013-10-22 23:55:47,384 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-22 23:55:47,384 [DEBUG] Created connection to 192.168.2.25 at port 5001
+2013-10-22 23:55:47,385 [DEBUG] Received state 444, new state 448
+2013-10-22 23:55:47,385 [DEBUG] releasing lock
+2013-10-22 23:55:47,386 [DEBUG] Next epoch: 29
+2013-10-22 23:55:47,386 [DEBUG] sleeping for 11.6135759354
+2013-10-22 23:55:47,386 [DEBUG] acquired lock
+2013-10-22 23:55:47,387 [DEBUG] Accepting connections
+2013-10-22 23:55:47,823 [DEBUG] Accepted connection from 192.168.2.16 at port 5002
+2013-10-22 23:55:47,823 [DEBUG] Received state 448, new state 448
+2013-10-22 23:55:47,823 [DEBUG] releasing lock
+2013-10-22 23:55:47,823 [DEBUG] acquired lock
+2013-10-22 23:55:47,824 [DEBUG] Accepting connections
+2013-10-22 23:55:50,824 [WARNING] passive thread timed out
+2013-10-22 23:55:50,824 [DEBUG] Emergency lock release
+2013-10-22 23:55:51,824 [DEBUG] acquired lock
+2013-10-22 23:55:51,824 [DEBUG] Accepting connections
+2013-10-22 23:55:54,834 [WARNING] passive thread timed out
+2013-10-22 23:55:54,834 [DEBUG] Emergency lock release
+2013-10-22 23:55:55,834 [DEBUG] acquired lock
+2013-10-22 23:55:55,834 [DEBUG] Accepting connections
+2013-10-22 23:55:58,844 [WARNING] passive thread timed out
+2013-10-22 23:55:58,844 [DEBUG] Emergency lock release
+2013-10-22 23:55:59,004 [DEBUG] woke up
+2013-10-22 23:55:59,844 [DEBUG] acquired lock
+2013-10-22 23:55:59,844 [DEBUG] Accepting connections
+2013-10-22 23:56:02,854 [WARNING] passive thread timed out
+2013-10-22 23:56:02,854 [DEBUG] Emergency lock release
+2013-10-22 23:56:02,854 [DEBUG] acquired lock
+2013-10-22 23:56:02,854 [DEBUG] Connecting to address 192.168.2.16
+2013-10-22 23:56:02,855 [DEBUG] connection exists, recreating socket
+2013-10-22 23:56:03,854 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-22 23:56:03,855 [DEBUG] Created connection to 192.168.2.16 at port 5001
+2013-10-22 23:56:06,864 [DEBUG] active thread timed out XXX
+2013-10-22 23:56:06,864 [DEBUG] Emergency lock release
+2013-10-22 23:56:06,864 [DEBUG] acquired lock
+2013-10-22 23:56:06,864 [DEBUG] Accepting connections
+2013-10-22 23:56:06,865 [DEBUG] Accepted connection from 192.168.2.16 at port 5002
+2013-10-22 23:56:06,865 [DEBUG] Received state 448, new state 448
+2013-10-22 23:56:06,865 [DEBUG] releasing lock
+2013-10-22 23:56:06,865 [DEBUG] acquired lock
+2013-10-22 23:56:06,865 [DEBUG] Accepting connections
+2013-10-22 23:56:07,864 [DEBUG] Next epoch: 30
+2013-10-22 23:56:07,864 [DEBUG] sleeping for 6.13553094864
+2013-10-22 23:56:09,874 [WARNING] passive thread timed out
+2013-10-22 23:56:09,874 [DEBUG] Emergency lock release
+2013-10-22 23:56:10,865 [DEBUG] acquired lock
+2013-10-22 23:56:10,865 [DEBUG] Accepting connections
+2013-10-22 23:56:13,884 [WARNING] passive thread timed out
+2013-10-22 23:56:13,884 [DEBUG] Emergency lock release
+2013-10-22 23:56:14,004 [DEBUG] woke up
+2013-10-22 23:56:14,724 [DEBUG] acquired lock
+2013-10-22 23:56:14,724 [DEBUG] Connecting to address 192.168.2.12
+2013-10-22 23:56:14,724 [DEBUG] connection exists, recreating socket
+2013-10-22 23:56:15,724 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-22 23:56:15,724 [DEBUG] Created connection to 192.168.2.12 at port 5001
+2013-10-22 23:56:18,670 [DEBUG] Received state 452, new state 450
+2013-10-22 23:56:18,670 [DEBUG] releasing lock
+2013-10-22 23:56:18,670 [DEBUG] Next epoch: 31
+2013-10-22 23:56:18,671 [DEBUG] sleeping for 10.3289849758
+2013-10-22 23:56:18,671 [DEBUG] acquired lock
+2013-10-22 23:56:18,671 [DEBUG] Accepting connections
+2013-10-22 23:56:18,893 [DEBUG] Accepted connection from 192.168.2.16 at port 5002
+2013-10-22 23:56:18,893 [DEBUG] Received state 448, new state 449
+2013-10-22 23:56:18,893 [DEBUG] releasing lock
+2013-10-22 23:56:18,893 [DEBUG] acquired lock
+2013-10-22 23:56:18,893 [DEBUG] Accepting connections
+2013-10-22 23:56:20,621 [DEBUG] Accepted connection from 192.168.2.25 at port 5002
+2013-10-22 23:56:20,621 [DEBUG] Received state 447, new state 448
+2013-10-22 23:56:20,622 [DEBUG] releasing lock
+2013-10-22 23:56:20,622 [DEBUG] acquired lock
+2013-10-22 23:56:20,622 [DEBUG] Accepting connections
+2013-10-22 23:56:23,615 [WARNING] passive thread timed out
+2013-10-22 23:56:23,615 [DEBUG] Emergency lock release
+2013-10-22 23:56:24,624 [DEBUG] acquired lock
+2013-10-22 23:56:24,624 [DEBUG] Accepting connections
+2013-10-22 23:56:27,634 [WARNING] passive thread timed out
+2013-10-22 23:56:27,634 [DEBUG] Emergency lock release
+2013-10-22 23:56:28,634 [DEBUG] acquired lock
+2013-10-22 23:56:28,634 [DEBUG] Accepting connections
+2013-10-22 23:56:28,994 [DEBUG] woke up
+2013-10-22 23:56:31,644 [WARNING] passive thread timed out
+2013-10-22 23:56:31,644 [DEBUG] Emergency lock release
+2013-10-22 23:56:31,644 [DEBUG] acquired lock
+2013-10-22 23:56:31,644 [DEBUG] Connecting to address 192.168.2.12
+2013-10-22 23:56:31,645 [DEBUG] connection exists, recreating socket
+2013-10-22 23:56:32,644 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-22 23:56:32,644 [DEBUG] Created connection to 192.168.2.12 at port 5001
+2013-10-22 23:56:35,653 [DEBUG] active thread timed out XXX
+2013-10-22 23:56:35,653 [DEBUG] Emergency lock release
+2013-10-22 23:56:35,654 [DEBUG] acquired lock
+2013-10-22 23:56:35,654 [DEBUG] Accepting connections
+2013-10-22 23:56:35,654 [DEBUG] Accepted connection from 192.168.2.25 at port 5002
+2013-10-22 23:56:35,654 [DEBUG] Received state 448, new state 448
+2013-10-22 23:56:35,654 [DEBUG] releasing lock
+2013-10-22 23:56:35,655 [DEBUG] acquired lock
+2013-10-22 23:56:35,655 [DEBUG] Accepting connections
+2013-10-22 23:56:35,655 [DEBUG] Accepted connection from 192.168.2.12 at port 5002
+2013-10-22 23:56:35,655 [DEBUG] Received state 451, new state 449
+2013-10-22 23:56:35,656 [DEBUG] releasing lock
+2013-10-22 23:56:35,656 [DEBUG] acquired lock
+2013-10-22 23:56:35,656 [DEBUG] Accepting connections
+2013-10-22 23:56:35,657 [DEBUG] Accepted connection from 192.168.2.10 at port 5002
+2013-10-22 23:56:35,657 [DEBUG] Received state 441, new state 445
+2013-10-22 23:56:35,657 [DEBUG] releasing lock
+2013-10-22 23:56:35,658 [DEBUG] acquired lock
+2013-10-22 23:56:35,658 [DEBUG] Accepting connections
+2013-10-22 23:56:36,654 [DEBUG] Next epoch: 32
+2013-10-22 23:56:36,654 [DEBUG] sleeping for 7.34549498558
+2013-10-22 23:56:38,683 [WARNING] passive thread timed out
+2013-10-22 23:56:38,683 [DEBUG] Emergency lock release
+2013-10-22 23:56:39,684 [DEBUG] acquired lock
+2013-10-22 23:56:39,684 [DEBUG] Accepting connections
+2013-10-22 23:56:42,701 [WARNING] passive thread timed out
+2013-10-22 23:56:42,702 [DEBUG] Emergency lock release
+2013-10-22 23:56:43,709 [DEBUG] acquired lock
+2013-10-22 23:56:43,710 [DEBUG] Accepting connections
+2013-10-22 23:56:44,004 [DEBUG] woke up
+2013-10-22 23:56:46,716 [WARNING] passive thread timed out
+2013-10-22 23:56:46,716 [DEBUG] Emergency lock release
+2013-10-22 23:56:46,717 [DEBUG] acquired lock
+2013-10-22 23:56:46,717 [DEBUG] Connecting to address 192.168.2.12
+2013-10-22 23:56:46,717 [DEBUG] connection exists, recreating socket
+2013-10-22 23:56:47,735 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-22 23:56:47,735 [DEBUG] Created connection to 192.168.2.12 at port 5001
+2013-10-22 23:56:48,711 [DEBUG] Received state 450, new state 447
+2013-10-22 23:56:48,711 [DEBUG] releasing lock
+2013-10-22 23:56:48,711 [DEBUG] Next epoch: 33
+2013-10-22 23:56:48,711 [DEBUG] sleeping for 10.2881629467
+2013-10-22 23:56:48,712 [DEBUG] acquired lock
+2013-10-22 23:56:48,712 [DEBUG] Accepting connections
+2013-10-22 23:56:48,713 [DEBUG] Accepted connection from 192.168.2.16 at port 5002
+2013-10-22 23:56:48,713 [DEBUG] Received state 446, new state 446
+2013-10-22 23:56:48,713 [DEBUG] releasing lock
+2013-10-22 23:56:48,713 [DEBUG] acquired lock
+2013-10-22 23:56:48,713 [DEBUG] Accepting connections
+2013-10-22 23:56:51,714 [WARNING] passive thread timed out
+2013-10-22 23:56:51,714 [DEBUG] Emergency lock release
+2013-10-22 23:56:52,714 [DEBUG] acquired lock
+2013-10-22 23:56:52,714 [DEBUG] Accepting connections
+2013-10-22 23:56:52,714 [DEBUG] Accepted connection from 192.168.2.25 at port 5002
+2013-10-22 23:56:52,715 [DEBUG] Received state 447, new state 446
+2013-10-22 23:56:52,715 [DEBUG] releasing lock
+2013-10-22 23:56:52,715 [DEBUG] acquired lock
+2013-10-22 23:56:52,715 [DEBUG] Accepting connections
+2013-10-22 23:56:55,724 [WARNING] passive thread timed out
+2013-10-22 23:56:55,724 [DEBUG] Emergency lock release
+2013-10-22 23:56:56,724 [DEBUG] acquired lock
+2013-10-22 23:56:56,724 [DEBUG] Accepting connections
+2013-10-22 23:56:58,994 [DEBUG] woke up
+2013-10-22 23:56:59,734 [WARNING] passive thread timed out
+2013-10-22 23:56:59,734 [DEBUG] Emergency lock release
+2013-10-22 23:56:59,744 [DEBUG] acquired lock
+2013-10-22 23:56:59,744 [DEBUG] Connecting to address 192.168.2.25
+2013-10-22 23:56:59,745 [DEBUG] connection exists, recreating socket
+2013-10-22 23:57:00,754 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-22 23:57:00,754 [DEBUG] Created connection to 192.168.2.25 at port 5001
+2013-10-22 23:57:00,755 [DEBUG] Received state 446, new state 446
+2013-10-22 23:57:00,755 [DEBUG] releasing lock
+2013-10-22 23:57:00,755 [DEBUG] Next epoch: 34
+2013-10-22 23:57:00,756 [DEBUG] sleeping for 13.2439100742
+2013-10-22 23:57:00,756 [DEBUG] acquired lock
+2013-10-22 23:57:00,756 [DEBUG] Accepting connections
+2013-10-22 23:57:03,764 [WARNING] passive thread timed out
+2013-10-22 23:57:03,764 [DEBUG] Emergency lock release
+2013-10-22 23:57:04,755 [DEBUG] acquired lock
+2013-10-22 23:57:04,755 [DEBUG] Accepting connections
+2013-10-22 23:57:04,755 [DEBUG] Accepted connection from 192.168.2.10 at port 5002
+2013-10-22 23:57:04,755 [DEBUG] Received state 442, new state 444
+2013-10-22 23:57:04,756 [DEBUG] releasing lock
+2013-10-22 23:57:04,756 [DEBUG] acquired lock
+2013-10-22 23:57:04,756 [DEBUG] Accepting connections
+2013-10-22 23:57:07,783 [WARNING] passive thread timed out
+2013-10-22 23:57:07,783 [DEBUG] Emergency lock release
+2013-10-22 23:57:08,784 [DEBUG] acquired lock
+2013-10-22 23:57:08,784 [DEBUG] Accepting connections
+2013-10-22 23:57:11,794 [WARNING] passive thread timed out
+2013-10-22 23:57:11,794 [DEBUG] Emergency lock release
+2013-10-22 23:57:12,794 [DEBUG] acquired lock
+2013-10-22 23:57:12,794 [DEBUG] Accepting connections
+2013-10-22 23:57:14,004 [DEBUG] woke up
+2013-10-22 23:57:15,804 [WARNING] passive thread timed out
+2013-10-22 23:57:15,804 [DEBUG] Emergency lock release
+2013-10-22 23:57:16,804 [DEBUG] acquired lock
+2013-10-22 23:57:16,804 [DEBUG] Accepting connections
+2013-10-22 23:57:16,804 [DEBUG] Accepted connection from 192.168.2.16 at port 5002
+2013-10-22 23:57:16,805 [DEBUG] Received state 445, new state 444
+2013-10-22 23:57:16,805 [DEBUG] releasing lock
+2013-10-22 23:57:16,805 [DEBUG] acquired lock
+2013-10-22 23:57:16,805 [DEBUG] Accepting connections
+2013-10-22 23:57:16,831 [DEBUG] Accepted connection from 192.168.2.12 at port 5002
+2013-10-22 23:57:16,831 [DEBUG] Received state 448, new state 446
+2013-10-22 23:57:16,831 [DEBUG] releasing lock
+2013-10-22 23:57:16,831 [DEBUG] acquired lock
+2013-10-22 23:57:16,831 [DEBUG] Accepting connections
+2013-10-22 23:57:19,835 [WARNING] passive thread timed out
+2013-10-22 23:57:19,836 [DEBUG] Emergency lock release
+2013-10-22 23:57:19,836 [DEBUG] acquired lock
+2013-10-22 23:57:19,836 [DEBUG] Connecting to address 192.168.2.25
+2013-10-22 23:57:19,836 [DEBUG] connection exists, recreating socket
+2013-10-22 23:57:20,844 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-22 23:57:20,845 [DEBUG] Created connection to 192.168.2.25 at port 5001
+2013-10-22 23:57:20,845 [DEBUG] Received state 445, new state 445
+2013-10-22 23:57:20,845 [DEBUG] releasing lock
+2013-10-22 23:57:20,846 [DEBUG] Next epoch: 35
+2013-10-22 23:57:20,846 [DEBUG] sleeping for 8.15371608734
+2013-10-22 23:57:20,846 [DEBUG] acquired lock
+2013-10-22 23:57:20,847 [DEBUG] Accepting connections
+2013-10-22 23:57:23,864 [WARNING] passive thread timed out
+2013-10-22 23:57:23,864 [DEBUG] Emergency lock release
+2013-10-22 23:57:24,864 [DEBUG] acquired lock
+2013-10-22 23:57:24,864 [DEBUG] Accepting connections
+2013-10-22 23:57:27,874 [WARNING] passive thread timed out
+2013-10-22 23:57:27,874 [DEBUG] Emergency lock release
+2013-10-22 23:57:28,874 [DEBUG] acquired lock
+2013-10-22 23:57:28,874 [DEBUG] Accepting connections
+2013-10-22 23:57:29,014 [DEBUG] woke up
+2013-10-22 23:57:31,884 [WARNING] passive thread timed out
+2013-10-22 23:57:31,884 [DEBUG] Emergency lock release
+2013-10-22 23:57:31,884 [DEBUG] acquired lock
+2013-10-22 23:57:31,884 [DEBUG] Connecting to address 192.168.2.10
+2013-10-22 23:57:31,885 [DEBUG] connection exists, recreating socket
+2013-10-22 23:57:32,885 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-22 23:57:32,885 [DEBUG] Created connection to 192.168.2.10 at port 5001
+2013-10-22 23:57:32,886 [DEBUG] Received state 443, new state 444
+2013-10-22 23:57:32,886 [DEBUG] releasing lock
+2013-10-22 23:57:32,886 [DEBUG] Next epoch: 36
+2013-10-22 23:57:32,887 [DEBUG] sleeping for 11.1129701138
+2013-10-22 23:57:32,887 [DEBUG] acquired lock
+2013-10-22 23:57:32,887 [DEBUG] Accepting connections
+2013-10-22 23:57:35,904 [WARNING] passive thread timed out
+2013-10-22 23:57:35,904 [DEBUG] Emergency lock release
+2013-10-22 23:57:36,904 [DEBUG] acquired lock
+2013-10-22 23:57:36,904 [DEBUG] Accepting connections
+2013-10-22 23:57:39,914 [WARNING] passive thread timed out
+2013-10-22 23:57:39,914 [DEBUG] Emergency lock release
+2013-10-22 23:57:40,924 [DEBUG] acquired lock
+2013-10-22 23:57:40,924 [DEBUG] Accepting connections
+2013-10-22 23:57:43,934 [WARNING] passive thread timed out
+2013-10-22 23:57:43,934 [DEBUG] Emergency lock release
+2013-10-22 23:57:44,021 [DEBUG] woke up
+2013-10-22 23:57:44,925 [DEBUG] acquired lock
+2013-10-22 23:57:44,925 [DEBUG] Accepting connections
+2013-10-22 23:57:47,944 [WARNING] passive thread timed out
+2013-10-22 23:57:47,944 [DEBUG] Emergency lock release
+2013-10-22 23:57:47,944 [DEBUG] acquired lock
+2013-10-22 23:57:47,944 [DEBUG] Connecting to address 192.168.2.12
+2013-10-22 23:57:47,945 [DEBUG] connection exists, recreating socket
+2013-10-22 23:57:48,944 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-22 23:57:48,944 [DEBUG] Created connection to 192.168.2.12 at port 5001
+2013-10-22 23:57:48,945 [DEBUG] Received state 447, new state 445
+2013-10-22 23:57:48,945 [DEBUG] releasing lock
+2013-10-22 23:57:48,946 [DEBUG] acquired lock
+2013-10-22 23:57:48,946 [DEBUG] Accepting connections
+2013-10-22 23:57:48,946 [DEBUG] Accepted connection from 192.168.2.16 at port 5002
+2013-10-22 23:57:48,947 [DEBUG] Received state 443, new state 444
+2013-10-22 23:57:48,947 [DEBUG] releasing lock
+2013-10-22 23:57:48,947 [DEBUG] acquired lock
+2013-10-22 23:57:48,947 [DEBUG] Accepting connections
+2013-10-22 23:57:48,947 [DEBUG] Next epoch: 37
+2013-10-22 23:57:48,947 [DEBUG] sleeping for 10.052118063
+2013-10-22 23:57:51,954 [WARNING] passive thread timed out
+2013-10-22 23:57:51,954 [DEBUG] Emergency lock release
+2013-10-22 23:57:52,954 [DEBUG] acquired lock
+2013-10-22 23:57:52,954 [DEBUG] Accepting connections
+2013-10-22 23:57:55,964 [WARNING] passive thread timed out
+2013-10-22 23:57:55,964 [DEBUG] Emergency lock release
+2013-10-22 23:57:56,964 [DEBUG] acquired lock
+2013-10-22 23:57:56,964 [DEBUG] Accepting connections
+2013-10-22 23:57:59,004 [DEBUG] woke up
+2013-10-22 23:57:59,974 [WARNING] passive thread timed out
+2013-10-22 23:57:59,974 [DEBUG] Emergency lock release
+2013-10-22 23:57:59,974 [DEBUG] acquired lock
+2013-10-22 23:57:59,974 [DEBUG] Connecting to address 192.168.2.10
+2013-10-22 23:57:59,974 [DEBUG] connection exists, recreating socket
+2013-10-22 23:58:00,974 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-22 23:58:00,974 [DEBUG] Created connection to 192.168.2.10 at port 5001
+2013-10-22 23:58:00,975 [DEBUG] Received state 441, new state 442
+2013-10-22 23:58:00,976 [DEBUG] releasing lock
+2013-10-22 23:58:00,976 [DEBUG] acquired lock
+2013-10-22 23:58:00,976 [DEBUG] Accepting connections
+2013-10-22 23:58:00,976 [DEBUG] Next epoch: 38
+2013-10-22 23:58:00,977 [DEBUG] sleeping for 13.0230250359
+2013-10-22 23:58:03,991 [WARNING] passive thread timed out
+2013-10-22 23:58:03,991 [DEBUG] Emergency lock release
+2013-10-22 23:58:04,994 [DEBUG] acquired lock
+2013-10-22 23:58:04,995 [DEBUG] Accepting connections
+2013-10-22 23:58:08,014 [WARNING] passive thread timed out
+2013-10-22 23:58:08,014 [DEBUG] Emergency lock release
+2013-10-22 23:58:09,005 [DEBUG] acquired lock
+2013-10-22 23:58:09,006 [DEBUG] Accepting connections
+2013-10-22 23:58:12,024 [WARNING] passive thread timed out
+2013-10-22 23:58:12,024 [DEBUG] Emergency lock release
+2013-10-22 23:58:13,024 [DEBUG] acquired lock
+2013-10-22 23:58:13,024 [DEBUG] Accepting connections
+2013-10-22 23:58:14,004 [DEBUG] woke up
+2013-10-22 23:58:16,034 [WARNING] passive thread timed out
+2013-10-22 23:58:16,034 [DEBUG] Emergency lock release
+2013-10-22 23:58:16,034 [DEBUG] acquired lock
+2013-10-22 23:58:16,034 [DEBUG] Connecting to address 192.168.2.12
+2013-10-22 23:58:16,034 [DEBUG] connection exists, recreating socket
+2013-10-22 23:58:17,034 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-22 23:58:17,035 [DEBUG] Created connection to 192.168.2.12 at port 5001
+2013-10-22 23:58:17,035 [DEBUG] Received state 446, new state 444
+2013-10-22 23:58:17,036 [DEBUG] releasing lock
+2013-10-22 23:58:17,036 [DEBUG] acquired lock
+2013-10-22 23:58:17,036 [DEBUG] Accepting connections
+2013-10-22 23:58:17,037 [DEBUG] Accepted connection from 192.168.2.25 at port 5002
+2013-10-22 23:58:17,037 [DEBUG] Received state 442, new state 443
+2013-10-22 23:58:17,037 [DEBUG] releasing lock
+2013-10-22 23:58:17,037 [DEBUG] acquired lock
+2013-10-22 23:58:17,037 [DEBUG] Accepting connections
+2013-10-22 23:58:17,038 [DEBUG] Next epoch: 39
+2013-10-22 23:58:17,038 [DEBUG] sleeping for 11.9618320465
+2013-10-22 23:58:20,054 [WARNING] passive thread timed out
+2013-10-22 23:58:20,054 [DEBUG] Emergency lock release
+2013-10-22 23:58:21,054 [DEBUG] acquired lock
+2013-10-22 23:58:21,054 [DEBUG] Accepting connections
+2013-10-22 23:58:22,419 [DEBUG] Accepted connection from 192.168.2.12 at port 5002
+2013-10-22 23:58:22,419 [DEBUG] Received state 445, new state 444
+2013-10-22 23:58:22,419 [DEBUG] releasing lock
+2013-10-22 23:58:22,419 [DEBUG] acquired lock
+2013-10-22 23:58:22,419 [DEBUG] Accepting connections
+2013-10-22 23:58:25,424 [WARNING] passive thread timed out
+2013-10-22 23:58:25,424 [DEBUG] Emergency lock release
+2013-10-22 23:58:26,424 [DEBUG] acquired lock
+2013-10-22 23:58:26,424 [DEBUG] Accepting connections
+2013-10-22 23:58:29,006 [DEBUG] woke up
+2013-10-22 23:58:29,434 [WARNING] passive thread timed out
+2013-10-22 23:58:29,434 [DEBUG] Emergency lock release
+2013-10-22 23:58:30,434 [DEBUG] acquired lock
+2013-10-22 23:58:30,434 [DEBUG] Accepting connections
+2013-10-22 23:58:33,444 [WARNING] passive thread timed out
+2013-10-22 23:58:33,444 [DEBUG] Emergency lock release
+2013-10-22 23:58:33,444 [DEBUG] acquired lock
+2013-10-22 23:58:33,444 [DEBUG] Connecting to address 192.168.2.10
+2013-10-22 23:58:33,445 [DEBUG] connection exists, recreating socket
+2013-10-22 23:58:34,441 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-22 23:58:34,441 [DEBUG] Created connection to 192.168.2.10 at port 5001
+2013-10-22 23:58:34,442 [DEBUG] Received state 436, new state 440
+2013-10-22 23:58:34,442 [DEBUG] releasing lock
+2013-10-22 23:58:34,443 [DEBUG] acquired lock
+2013-10-22 23:58:34,443 [DEBUG] Accepting connections
+2013-10-22 23:58:34,443 [DEBUG] Accepted connection from 192.168.2.25 at port 5002
+2013-10-22 23:58:34,444 [DEBUG] Received state 443, new state 441
+2013-10-22 23:58:34,444 [DEBUG] releasing lock
+2013-10-22 23:58:34,444 [DEBUG] acquired lock
+2013-10-22 23:58:34,444 [DEBUG] Accepting connections
+2013-10-22 23:58:34,444 [DEBUG] Next epoch: 40
+2013-10-22 23:58:34,444 [DEBUG] sleeping for 9.55509305
+2013-10-22 23:58:35,474 [DEBUG] Accepted connection from 192.168.2.16 at port 5002
+2013-10-22 23:58:35,474 [DEBUG] Received state 438, new state 439
+2013-10-22 23:58:35,475 [DEBUG] releasing lock
+2013-10-22 23:58:35,475 [DEBUG] acquired lock
+2013-10-22 23:58:35,475 [DEBUG] Accepting connections
+2013-10-22 23:58:38,493 [WARNING] passive thread timed out
+2013-10-22 23:58:38,493 [DEBUG] Emergency lock release
+2013-10-22 23:58:39,494 [DEBUG] acquired lock
+2013-10-22 23:58:39,494 [DEBUG] Accepting connections
+2013-10-22 23:58:42,514 [WARNING] passive thread timed out
+2013-10-22 23:58:42,514 [DEBUG] Emergency lock release
+2013-10-22 23:58:43,516 [DEBUG] acquired lock
+2013-10-22 23:58:43,516 [DEBUG] Accepting connections
+2013-10-22 23:58:44,004 [DEBUG] woke up
+2013-10-22 23:58:46,534 [WARNING] passive thread timed out
+2013-10-22 23:58:46,534 [DEBUG] Emergency lock release
+2013-10-22 23:58:46,534 [DEBUG] acquired lock
+2013-10-22 23:58:46,535 [DEBUG] Connecting to address 192.168.2.10
+2013-10-22 23:58:46,535 [DEBUG] connection exists, recreating socket
+2013-10-22 23:58:47,534 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-22 23:58:47,534 [DEBUG] Created connection to 192.168.2.10 at port 5001
+2013-10-22 23:58:47,535 [DEBUG] Received state 438, new state 438
+2013-10-22 23:58:47,536 [DEBUG] releasing lock
+2013-10-22 23:58:47,536 [DEBUG] acquired lock
+2013-10-22 23:58:47,536 [DEBUG] Accepting connections
+2013-10-22 23:58:47,536 [DEBUG] Next epoch: 41
+2013-10-22 23:58:47,537 [DEBUG] sleeping for 11.4628829956
+2013-10-22 23:58:50,535 [WARNING] passive thread timed out
+2013-10-22 23:58:50,535 [DEBUG] Emergency lock release
+2013-10-22 23:58:51,534 [DEBUG] acquired lock
+2013-10-22 23:58:51,535 [DEBUG] Accepting connections
+2013-10-22 23:58:51,535 [DEBUG] Accepted connection from 192.168.2.16 at port 5002
+2013-10-22 23:58:51,535 [DEBUG] Received state 439, new state 438
+2013-10-22 23:58:51,536 [DEBUG] releasing lock
+2013-10-22 23:58:51,536 [DEBUG] acquired lock
+2013-10-22 23:58:51,536 [DEBUG] Accepting connections
+2013-10-22 23:58:54,554 [WARNING] passive thread timed out
+2013-10-22 23:58:54,554 [DEBUG] Emergency lock release
+2013-10-22 23:58:55,558 [DEBUG] acquired lock
+2013-10-22 23:58:55,558 [DEBUG] Accepting connections
+2013-10-22 23:58:58,574 [WARNING] passive thread timed out
+2013-10-22 23:58:58,574 [DEBUG] Emergency lock release
+2013-10-22 23:58:59,009 [DEBUG] woke up
+2013-10-22 23:58:59,564 [DEBUG] acquired lock
+2013-10-22 23:58:59,564 [DEBUG] Accepting connections
+2013-10-22 23:59:02,584 [WARNING] passive thread timed out
+2013-10-22 23:59:02,584 [DEBUG] Emergency lock release
+2013-10-22 23:59:02,584 [DEBUG] acquired lock
+2013-10-22 23:59:02,584 [DEBUG] Connecting to address 192.168.2.12
+2013-10-22 23:59:02,585 [DEBUG] connection exists, recreating socket
+2013-10-22 23:59:03,584 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-22 23:59:03,584 [DEBUG] Created connection to 192.168.2.12 at port 5001
+2013-10-22 23:59:06,451 [DEBUG] Received state 442, new state 440
+2013-10-22 23:59:06,451 [DEBUG] releasing lock
+2013-10-22 23:59:06,452 [DEBUG] acquired lock
+2013-10-22 23:59:06,452 [DEBUG] Accepting connections
+2013-10-22 23:59:06,453 [DEBUG] Accepted connection from 192.168.2.16 at port 5002
+2013-10-22 23:59:06,453 [DEBUG] Received state 438, new state 439
+2013-10-22 23:59:06,453 [DEBUG] releasing lock
+2013-10-22 23:59:06,454 [DEBUG] acquired lock
+2013-10-22 23:59:06,454 [DEBUG] Accepting connections
+2013-10-22 23:59:06,454 [DEBUG] Next epoch: 42
+2013-10-22 23:59:06,454 [DEBUG] sleeping for 7.54530501366
+2013-10-22 23:59:09,454 [WARNING] passive thread timed out
+2013-10-22 23:59:09,454 [DEBUG] Emergency lock release
+2013-10-22 23:59:10,454 [DEBUG] acquired lock
+2013-10-22 23:59:10,454 [DEBUG] Accepting connections
+2013-10-22 23:59:13,464 [WARNING] passive thread timed out
+2013-10-22 23:59:13,464 [DEBUG] Emergency lock release
+2013-10-22 23:59:13,994 [DEBUG] woke up
+2013-10-22 23:59:14,464 [DEBUG] acquired lock
+2013-10-22 23:59:14,464 [DEBUG] Accepting connections
+2013-10-22 23:59:17,481 [WARNING] passive thread timed out
+2013-10-22 23:59:17,481 [DEBUG] Emergency lock release
+2013-10-22 23:59:17,644 [DEBUG] acquired lock
+2013-10-22 23:59:17,644 [DEBUG] Connecting to address 192.168.2.25
+2013-10-22 23:59:17,644 [DEBUG] connection exists, recreating socket
+2013-10-22 23:59:18,637 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-22 23:59:18,638 [DEBUG] Created connection to 192.168.2.25 at port 5001
+2013-10-22 23:59:18,639 [DEBUG] Received state 439, new state 439
+2013-10-22 23:59:18,639 [DEBUG] releasing lock
+2013-10-22 23:59:18,639 [DEBUG] acquired lock
+2013-10-22 23:59:18,640 [DEBUG] Accepting connections
+2013-10-22 23:59:18,640 [DEBUG] Accepted connection from 192.168.2.16 at port 5002
+2013-10-22 23:59:18,640 [DEBUG] Received state 439, new state 439
+2013-10-22 23:59:18,641 [DEBUG] releasing lock
+2013-10-22 23:59:18,641 [DEBUG] acquired lock
+2013-10-22 23:59:18,641 [DEBUG] Accepting connections
+2013-10-22 23:59:18,641 [DEBUG] Next epoch: 43
+2013-10-22 23:59:18,641 [DEBUG] sleeping for 10.35820508
+2013-10-22 23:59:21,654 [WARNING] passive thread timed out
+2013-10-22 23:59:21,654 [DEBUG] Emergency lock release
+2013-10-22 23:59:22,645 [DEBUG] acquired lock
+2013-10-22 23:59:22,645 [DEBUG] Accepting connections
+2013-10-22 23:59:25,664 [WARNING] passive thread timed out
+2013-10-22 23:59:25,664 [DEBUG] Emergency lock release
+2013-10-22 23:59:26,664 [DEBUG] acquired lock
+2013-10-22 23:59:26,664 [DEBUG] Accepting connections
+2013-10-22 23:59:29,004 [DEBUG] woke up
+2013-10-22 23:59:29,674 [WARNING] passive thread timed out
+2013-10-22 23:59:29,674 [DEBUG] Emergency lock release
+2013-10-22 23:59:29,704 [DEBUG] acquired lock
+2013-10-22 23:59:29,704 [DEBUG] Connecting to address 192.168.2.16
+2013-10-22 23:59:29,704 [DEBUG] connection exists, recreating socket
+2013-10-22 23:59:30,704 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-22 23:59:30,704 [DEBUG] Created connection to 192.168.2.16 at port 5001
+2013-10-22 23:59:30,705 [DEBUG] Received state 438, new state 438
+2013-10-22 23:59:30,705 [DEBUG] releasing lock
+2013-10-22 23:59:30,706 [DEBUG] acquired lock
+2013-10-22 23:59:30,706 [DEBUG] Accepting connections
+2013-10-22 23:59:30,706 [DEBUG] Next epoch: 44
+2013-10-22 23:59:30,707 [DEBUG] sleeping for 13.2928600311
+2013-10-22 23:59:33,721 [WARNING] passive thread timed out
+2013-10-22 23:59:33,721 [DEBUG] Emergency lock release
+2013-10-22 23:59:34,723 [DEBUG] acquired lock
+2013-10-22 23:59:34,723 [DEBUG] Accepting connections
+2013-10-22 23:59:34,723 [DEBUG] Accepted connection from 192.168.2.16 at port 5002
+2013-10-22 23:59:34,724 [DEBUG] Received state 438, new state 438
+2013-10-22 23:59:34,724 [DEBUG] releasing lock
+2013-10-22 23:59:34,724 [DEBUG] acquired lock
+2013-10-22 23:59:34,724 [DEBUG] Accepting connections
+2013-10-22 23:59:37,734 [WARNING] passive thread timed out
+2013-10-22 23:59:37,734 [DEBUG] Emergency lock release
+2013-10-22 23:59:38,734 [DEBUG] acquired lock
+2013-10-22 23:59:38,734 [DEBUG] Accepting connections
+2013-10-22 23:59:41,744 [WARNING] passive thread timed out
+2013-10-22 23:59:41,744 [DEBUG] Emergency lock release
+2013-10-22 23:59:42,744 [DEBUG] acquired lock
+2013-10-22 23:59:42,744 [DEBUG] Accepting connections
+2013-10-22 23:59:44,004 [DEBUG] woke up
+2013-10-22 23:59:45,754 [WARNING] passive thread timed out
+2013-10-22 23:59:45,754 [DEBUG] Emergency lock release
+2013-10-22 23:59:46,754 [DEBUG] acquired lock
+2013-10-22 23:59:46,754 [DEBUG] Accepting connections
+2013-10-22 23:59:49,764 [WARNING] passive thread timed out
+2013-10-22 23:59:49,764 [DEBUG] Emergency lock release
+2013-10-22 23:59:49,764 [DEBUG] acquired lock
+2013-10-22 23:59:49,764 [DEBUG] Connecting to address 192.168.2.12
+2013-10-22 23:59:49,765 [DEBUG] connection exists, recreating socket
+2013-10-22 23:59:50,764 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-22 23:59:50,764 [DEBUG] Created connection to 192.168.2.12 at port 5001
+2013-10-22 23:59:50,765 [DEBUG] Received state 441, new state 439
+2013-10-22 23:59:50,765 [DEBUG] releasing lock
+2013-10-22 23:59:50,766 [DEBUG] acquired lock
+2013-10-22 23:59:50,766 [DEBUG] Accepting connections
+2013-10-22 23:59:50,766 [DEBUG] Next epoch: 45
+2013-10-22 23:59:50,767 [DEBUG] sleeping for 8.23289608955
+2013-10-22 23:59:53,774 [WARNING] passive thread timed out
+2013-10-22 23:59:53,774 [DEBUG] Emergency lock release
+2013-10-22 23:59:54,774 [DEBUG] acquired lock
+2013-10-22 23:59:54,774 [DEBUG] Accepting connections
+2013-10-22 23:59:57,784 [WARNING] passive thread timed out
+2013-10-22 23:59:57,784 [DEBUG] Emergency lock release
+2013-10-22 23:59:58,784 [DEBUG] acquired lock
+2013-10-22 23:59:58,784 [DEBUG] Accepting connections
+2013-10-22 23:59:59,004 [DEBUG] woke up
+2013-10-23 00:00:01,794 [WARNING] passive thread timed out
+2013-10-23 00:00:01,794 [DEBUG] Emergency lock release
+2013-10-23 00:00:01,794 [DEBUG] acquired lock
+2013-10-23 00:00:01,794 [DEBUG] Connecting to address 192.168.2.16
+2013-10-23 00:00:01,795 [DEBUG] connection exists, recreating socket
+2013-10-23 00:00:02,794 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-23 00:00:02,794 [DEBUG] Created connection to 192.168.2.16 at port 5001
+2013-10-23 00:00:05,804 [DEBUG] active thread timed out XXX
+2013-10-23 00:00:05,804 [DEBUG] Emergency lock release
+2013-10-23 00:00:05,804 [DEBUG] acquired lock
+2013-10-23 00:00:05,804 [DEBUG] Accepting connections
+2013-10-23 00:00:05,805 [DEBUG] Accepted connection from 192.168.2.16 at port 5002
+2013-10-23 00:00:05,805 [DEBUG] Received state 436, new state 437
+2013-10-23 00:00:05,805 [DEBUG] releasing lock
+2013-10-23 00:00:05,805 [DEBUG] acquired lock
+2013-10-23 00:00:05,805 [DEBUG] Accepting connections
+2013-10-23 00:00:06,804 [DEBUG] Next epoch: 46
+2013-10-23 00:00:06,804 [DEBUG] sleeping for 7.19554209709
+2013-10-23 00:00:08,814 [WARNING] passive thread timed out
+2013-10-23 00:00:08,814 [DEBUG] Emergency lock release
+2013-10-23 00:00:09,813 [DEBUG] acquired lock
+2013-10-23 00:00:09,813 [DEBUG] Accepting connections
+2013-10-23 00:00:12,824 [WARNING] passive thread timed out
+2013-10-23 00:00:12,824 [DEBUG] Emergency lock release
+2013-10-23 00:00:13,824 [DEBUG] acquired lock
+2013-10-23 00:00:13,824 [DEBUG] Accepting connections
+2013-10-23 00:00:14,004 [DEBUG] woke up
+2013-10-23 00:00:16,834 [WARNING] passive thread timed out
+2013-10-23 00:00:16,834 [DEBUG] Emergency lock release
+2013-10-23 00:00:16,834 [DEBUG] acquired lock
+2013-10-23 00:00:16,834 [DEBUG] Connecting to address 192.168.2.16
+2013-10-23 00:00:16,835 [DEBUG] connection exists, recreating socket
+2013-10-23 00:00:17,834 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-23 00:00:17,834 [DEBUG] Created connection to 192.168.2.16 at port 5001
+2013-10-23 00:00:20,804 [DEBUG] Received state 435, new state 436
+2013-10-23 00:00:20,805 [DEBUG] releasing lock
+2013-10-23 00:00:20,805 [DEBUG] Next epoch: 47
+2013-10-23 00:00:20,805 [DEBUG] sleeping for 8.19455194473
+2013-10-23 00:00:20,805 [DEBUG] acquired lock
+2013-10-23 00:00:20,806 [DEBUG] Accepting connections
+2013-10-23 00:00:20,806 [DEBUG] Accepted connection from 192.168.2.12 at port 5002
+2013-10-23 00:00:20,806 [DEBUG] Received state 440, new state 438
+2013-10-23 00:00:20,806 [DEBUG] releasing lock
+2013-10-23 00:00:20,807 [DEBUG] acquired lock
+2013-10-23 00:00:20,807 [DEBUG] Accepting connections
+2013-10-23 00:00:23,804 [WARNING] passive thread timed out
+2013-10-23 00:00:23,804 [DEBUG] Emergency lock release
+2013-10-23 00:00:24,804 [DEBUG] acquired lock
+2013-10-23 00:00:24,804 [DEBUG] Accepting connections
+2013-10-23 00:00:27,814 [WARNING] passive thread timed out
+2013-10-23 00:00:27,814 [DEBUG] Emergency lock release
+2013-10-23 00:00:28,814 [DEBUG] acquired lock
+2013-10-23 00:00:28,814 [DEBUG] Accepting connections
+2013-10-23 00:00:28,994 [DEBUG] woke up
+2013-10-23 00:00:31,824 [WARNING] passive thread timed out
+2013-10-23 00:00:31,824 [DEBUG] Emergency lock release
+2013-10-23 00:00:31,824 [DEBUG] acquired lock
+2013-10-23 00:00:31,824 [DEBUG] Connecting to address 192.168.2.25
+2013-10-23 00:00:31,824 [DEBUG] connection exists, recreating socket
+2013-10-23 00:00:32,824 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-23 00:00:32,825 [DEBUG] Created connection to 192.168.2.25 at port 5001
+2013-10-23 00:00:33,113 [DEBUG] Received state 433, new state 435
+2013-10-23 00:00:33,114 [DEBUG] releasing lock
+2013-10-23 00:00:33,114 [DEBUG] Next epoch: 48
+2013-10-23 00:00:33,114 [DEBUG] sleeping for 10.8854389191
+2013-10-23 00:00:33,115 [DEBUG] acquired lock
+2013-10-23 00:00:33,115 [DEBUG] Accepting connections
+2013-10-23 00:00:36,109 [WARNING] passive thread timed out
+2013-10-23 00:00:36,109 [DEBUG] Emergency lock release
+2013-10-23 00:00:37,116 [DEBUG] acquired lock
+2013-10-23 00:00:37,116 [DEBUG] Accepting connections
+2013-10-23 00:00:37,117 [DEBUG] Accepted connection from 192.168.2.10 at port 5002
+2013-10-23 00:00:37,117 [DEBUG] Received state 434, new state 434
+2013-10-23 00:00:37,117 [DEBUG] releasing lock
+2013-10-23 00:00:37,117 [DEBUG] acquired lock
+2013-10-23 00:00:37,118 [DEBUG] Accepting connections
+2013-10-23 00:00:40,131 [WARNING] passive thread timed out
+2013-10-23 00:00:40,131 [DEBUG] Emergency lock release
+2013-10-23 00:00:41,134 [DEBUG] acquired lock
+2013-10-23 00:00:41,134 [DEBUG] Accepting connections
+2013-10-23 00:00:43,985 [DEBUG] woke up
+2013-10-23 00:00:44,144 [WARNING] passive thread timed out
+2013-10-23 00:00:44,144 [DEBUG] Emergency lock release
+2013-10-23 00:00:44,528 [DEBUG] acquired lock
+2013-10-23 00:00:44,528 [DEBUG] Connecting to address 192.168.2.16
+2013-10-23 00:00:44,529 [DEBUG] connection exists, recreating socket
+2013-10-23 00:00:45,534 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-23 00:00:45,534 [DEBUG] Created connection to 192.168.2.16 at port 5001
+2013-10-23 00:00:45,535 [DEBUG] Received state 434, new state 434
+2013-10-23 00:00:45,535 [DEBUG] releasing lock
+2013-10-23 00:00:45,536 [DEBUG] Next epoch: 49
+2013-10-23 00:00:45,536 [DEBUG] sleeping for 13.4638419151
+2013-10-23 00:00:45,536 [DEBUG] acquired lock
+2013-10-23 00:00:45,536 [DEBUG] Accepting connections
+2013-10-23 00:00:48,544 [WARNING] passive thread timed out
+2013-10-23 00:00:48,544 [DEBUG] Emergency lock release
+2013-10-23 00:00:49,553 [DEBUG] acquired lock
+2013-10-23 00:00:49,553 [DEBUG] Accepting connections
+2013-10-23 00:00:49,553 [DEBUG] Accepted connection from 192.168.2.16 at port 5002
+2013-10-23 00:00:49,554 [DEBUG] Received state 434, new state 434
+2013-10-23 00:00:49,554 [DEBUG] releasing lock
+2013-10-23 00:00:49,554 [DEBUG] acquired lock
+2013-10-23 00:00:49,554 [DEBUG] Accepting connections
+2013-10-23 00:00:52,564 [WARNING] passive thread timed out
+2013-10-23 00:00:52,564 [DEBUG] Emergency lock release
+2013-10-23 00:00:53,555 [DEBUG] acquired lock
+2013-10-23 00:00:53,555 [DEBUG] Accepting connections
+2013-10-23 00:00:56,574 [WARNING] passive thread timed out
+2013-10-23 00:00:56,574 [DEBUG] Emergency lock release
+2013-10-23 00:00:57,574 [DEBUG] acquired lock
+2013-10-23 00:00:57,574 [DEBUG] Accepting connections
+2013-10-23 00:00:59,004 [DEBUG] woke up
+2013-10-23 00:01:00,584 [WARNING] passive thread timed out
+2013-10-23 00:01:00,584 [DEBUG] Emergency lock release
+2013-10-23 00:01:00,584 [DEBUG] acquired lock
+2013-10-23 00:01:00,584 [DEBUG] Connecting to address 192.168.2.16
+2013-10-23 00:01:00,585 [DEBUG] connection exists, recreating socket
+2013-10-23 00:01:01,587 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-23 00:01:01,587 [DEBUG] Created connection to 192.168.2.16 at port 5001
+2013-10-23 00:01:01,594 [DEBUG] Received state 434, new state 434
+2013-10-23 00:01:01,594 [DEBUG] releasing lock
+2013-10-23 00:01:01,594 [DEBUG] Next epoch: 50
+2013-10-23 00:01:01,595 [DEBUG] sleeping for 12.4049019814
+2013-10-23 00:01:01,595 [DEBUG] acquired lock
+2013-10-23 00:01:01,595 [DEBUG] Accepting connections
+2013-10-23 00:01:04,604 [WARNING] passive thread timed out
+2013-10-23 00:01:04,604 [DEBUG] Emergency lock release
+2013-10-23 00:01:05,604 [DEBUG] acquired lock
+2013-10-23 00:01:05,604 [DEBUG] Accepting connections
+2013-10-23 00:01:06,083 [DEBUG] Accepted connection from 192.168.2.10 at port 5002
+2013-10-23 00:01:06,083 [DEBUG] Received state 432, new state 433
+2013-10-23 00:01:06,083 [DEBUG] releasing lock
+2013-10-23 00:01:06,083 [DEBUG] acquired lock
+2013-10-23 00:01:06,084 [DEBUG] Accepting connections
+2013-10-23 00:01:09,078 [WARNING] passive thread timed out
+2013-10-23 00:01:09,078 [DEBUG] Emergency lock release
+2013-10-23 00:01:10,084 [DEBUG] acquired lock
+2013-10-23 00:01:10,084 [DEBUG] Accepting connections
+2013-10-23 00:01:13,094 [WARNING] passive thread timed out
+2013-10-23 00:01:13,094 [DEBUG] Emergency lock release
+2013-10-23 00:01:14,012 [DEBUG] woke up
+2013-10-23 00:01:14,094 [DEBUG] acquired lock
+2013-10-23 00:01:14,094 [DEBUG] Accepting connections
+2013-10-23 00:01:17,104 [WARNING] passive thread timed out
+2013-10-23 00:01:17,104 [DEBUG] Emergency lock release
+2013-10-23 00:01:17,105 [DEBUG] acquired lock
+2013-10-23 00:01:17,105 [DEBUG] Connecting to address 192.168.2.16
+2013-10-23 00:01:17,105 [DEBUG] connection exists, recreating socket
+2013-10-23 00:01:18,104 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-23 00:01:18,104 [DEBUG] Created connection to 192.168.2.16 at port 5001
+2013-10-23 00:01:18,122 [DEBUG] Received state 432, new state 432
+2013-10-23 00:01:18,123 [DEBUG] releasing lock
+2013-10-23 00:01:18,123 [DEBUG] acquired lock
+2013-10-23 00:01:18,123 [DEBUG] Accepting connections
+2013-10-23 00:01:18,124 [DEBUG] Next epoch: 51
+2013-10-23 00:01:18,124 [DEBUG] sleeping for 10.8757669926
+2013-10-23 00:01:21,125 [WARNING] passive thread timed out
+2013-10-23 00:01:21,125 [DEBUG] Emergency lock release
+2013-10-23 00:01:22,134 [DEBUG] acquired lock
+2013-10-23 00:01:22,134 [DEBUG] Accepting connections
+2013-10-23 00:01:25,144 [WARNING] passive thread timed out
+2013-10-23 00:01:25,144 [DEBUG] Emergency lock release
+2013-10-23 00:01:26,144 [DEBUG] acquired lock
+2013-10-23 00:01:26,144 [DEBUG] Accepting connections
+2013-10-23 00:01:29,004 [DEBUG] woke up
+2013-10-23 00:01:29,154 [WARNING] passive thread timed out
+2013-10-23 00:01:29,154 [DEBUG] Emergency lock release
+2013-10-23 00:01:30,154 [DEBUG] acquired lock
+2013-10-23 00:01:30,154 [DEBUG] Accepting connections
+2013-10-23 00:01:33,164 [WARNING] passive thread timed out
+2013-10-23 00:01:33,164 [DEBUG] Emergency lock release
+2013-10-23 00:01:33,164 [DEBUG] acquired lock
+2013-10-23 00:01:33,164 [DEBUG] Connecting to address 192.168.2.25
+2013-10-23 00:01:33,165 [DEBUG] connection exists, recreating socket
+2013-10-23 00:01:34,164 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-23 00:01:34,164 [DEBUG] Created connection to 192.168.2.25 at port 5001
+2013-10-23 00:01:35,752 [DEBUG] Received state 433, new state 432
+2013-10-23 00:01:35,752 [DEBUG] releasing lock
+2013-10-23 00:01:35,753 [DEBUG] acquired lock
+2013-10-23 00:01:35,753 [DEBUG] Accepting connections
+2013-10-23 00:01:35,753 [DEBUG] Accepted connection from 192.168.2.10 at port 5002
+2013-10-23 00:01:35,754 [DEBUG] Received state 432, new state 432
+2013-10-23 00:01:35,754 [DEBUG] releasing lock
+2013-10-23 00:01:35,754 [DEBUG] acquired lock
+2013-10-23 00:01:35,754 [DEBUG] Accepting connections
+2013-10-23 00:01:35,754 [DEBUG] Next epoch: 52
+2013-10-23 00:01:35,754 [DEBUG] sleeping for 8.24504709244
+2013-10-23 00:01:38,744 [WARNING] passive thread timed out
+2013-10-23 00:01:38,744 [DEBUG] Emergency lock release
+2013-10-23 00:01:39,744 [DEBUG] acquired lock
+2013-10-23 00:01:39,744 [DEBUG] Accepting connections
+2013-10-23 00:01:42,754 [WARNING] passive thread timed out
+2013-10-23 00:01:42,754 [DEBUG] Emergency lock release
+2013-10-23 00:01:43,754 [DEBUG] acquired lock
+2013-10-23 00:01:43,754 [DEBUG] Accepting connections
+2013-10-23 00:01:43,984 [DEBUG] woke up
+2013-10-23 00:01:46,764 [WARNING] passive thread timed out
+2013-10-23 00:01:46,764 [DEBUG] Emergency lock release
+2013-10-23 00:01:46,764 [DEBUG] acquired lock
+2013-10-23 00:01:46,764 [DEBUG] Connecting to address 192.168.2.25
+2013-10-23 00:01:46,765 [DEBUG] connection exists, recreating socket
+2013-10-23 00:01:47,764 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-23 00:01:47,765 [DEBUG] Created connection to 192.168.2.25 at port 5001
+2013-10-23 00:01:47,804 [DEBUG] Received state 430, new state 431
+2013-10-23 00:01:47,805 [DEBUG] releasing lock
+2013-10-23 00:01:47,805 [DEBUG] acquired lock
+2013-10-23 00:01:47,805 [DEBUG] Accepting connections
+2013-10-23 00:01:47,806 [DEBUG] Accepted connection from 192.168.2.16 at port 5002
+2013-10-23 00:01:47,806 [DEBUG] Received state 432, new state 431
+2013-10-23 00:01:47,806 [DEBUG] releasing lock
+2013-10-23 00:01:47,806 [DEBUG] acquired lock
+2013-10-23 00:01:47,806 [DEBUG] Accepting connections
+2013-10-23 00:01:47,807 [DEBUG] Next epoch: 53
+2013-10-23 00:01:47,807 [DEBUG] sleeping for 11.1927399635
+2013-10-23 00:01:50,804 [WARNING] passive thread timed out
+2013-10-23 00:01:50,804 [DEBUG] Emergency lock release
+2013-10-23 00:01:51,794 [DEBUG] acquired lock
+2013-10-23 00:01:51,794 [DEBUG] Accepting connections
+2013-10-23 00:01:54,814 [WARNING] passive thread timed out
+2013-10-23 00:01:54,814 [DEBUG] Emergency lock release
+2013-10-23 00:01:55,814 [DEBUG] acquired lock
+2013-10-23 00:01:55,814 [DEBUG] Accepting connections
+2013-10-23 00:01:58,824 [WARNING] passive thread timed out
+2013-10-23 00:01:58,824 [DEBUG] Emergency lock release
+2013-10-23 00:01:58,994 [DEBUG] woke up
+2013-10-23 00:01:59,824 [DEBUG] acquired lock
+2013-10-23 00:01:59,824 [DEBUG] Accepting connections
+2013-10-23 00:02:02,834 [WARNING] passive thread timed out
+2013-10-23 00:02:02,834 [DEBUG] Emergency lock release
+2013-10-23 00:02:02,834 [DEBUG] acquired lock
+2013-10-23 00:02:02,834 [DEBUG] Connecting to address 192.168.2.16
+2013-10-23 00:02:02,835 [DEBUG] connection exists, recreating socket
+2013-10-23 00:02:03,834 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-23 00:02:03,834 [DEBUG] Created connection to 192.168.2.16 at port 5001
+2013-10-23 00:02:06,844 [DEBUG] active thread timed out XXX
+2013-10-23 00:02:06,844 [DEBUG] Emergency lock release
+2013-10-23 00:02:06,844 [DEBUG] acquired lock
+2013-10-23 00:02:06,844 [DEBUG] Accepting connections
+2013-10-23 00:02:06,845 [DEBUG] Accepted connection from 192.168.2.16 at port 5002
+2013-10-23 00:02:06,845 [DEBUG] Received state 431, new state 431
+2013-10-23 00:02:06,845 [DEBUG] releasing lock
+2013-10-23 00:02:06,845 [DEBUG] acquired lock
+2013-10-23 00:02:06,845 [DEBUG] Accepting connections
+2013-10-23 00:02:07,844 [DEBUG] Next epoch: 54
+2013-10-23 00:02:07,844 [DEBUG] sleeping for 6.15547990799
+2013-10-23 00:02:09,854 [WARNING] passive thread timed out
+2013-10-23 00:02:09,854 [DEBUG] Emergency lock release
+2013-10-23 00:02:10,854 [DEBUG] acquired lock
+2013-10-23 00:02:10,854 [DEBUG] Accepting connections
+2013-10-23 00:02:13,864 [WARNING] passive thread timed out
+2013-10-23 00:02:13,864 [DEBUG] Emergency lock release
+2013-10-23 00:02:14,004 [DEBUG] woke up
+2013-10-23 00:02:14,864 [DEBUG] acquired lock
+2013-10-23 00:02:14,864 [DEBUG] Accepting connections
+2013-10-23 00:02:17,881 [WARNING] passive thread timed out
+2013-10-23 00:02:17,881 [DEBUG] Emergency lock release
+2013-10-23 00:02:17,882 [DEBUG] acquired lock
+2013-10-23 00:02:17,882 [DEBUG] Connecting to address 192.168.2.12
+2013-10-23 00:02:17,882 [DEBUG] connection exists, recreating socket
+2013-10-23 00:02:18,875 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-23 00:02:18,876 [DEBUG] Created connection to 192.168.2.12 at port 5001
+2013-10-23 00:02:18,876 [DEBUG] Received state 435, new state 433
+2013-10-23 00:02:18,877 [DEBUG] releasing lock
+2013-10-23 00:02:18,877 [DEBUG] Next epoch: 55
+2013-10-23 00:02:18,877 [DEBUG] sleeping for 10.1225640774
+2013-10-23 00:02:18,877 [DEBUG] acquired lock
+2013-10-23 00:02:18,878 [DEBUG] Accepting connections
+2013-10-23 00:02:18,878 [DEBUG] Accepted connection from 192.168.2.16 at port 5002
+2013-10-23 00:02:18,878 [DEBUG] Received state 431, new state 432
+2013-10-23 00:02:18,879 [DEBUG] releasing lock
+2013-10-23 00:02:18,879 [DEBUG] acquired lock
+2013-10-23 00:02:18,879 [DEBUG] Accepting connections
+2013-10-23 00:02:21,894 [WARNING] passive thread timed out
+2013-10-23 00:02:21,894 [DEBUG] Emergency lock release
+2013-10-23 00:02:22,894 [DEBUG] acquired lock
+2013-10-23 00:02:22,894 [DEBUG] Accepting connections
+2013-10-23 00:02:25,904 [WARNING] passive thread timed out
+2013-10-23 00:02:25,904 [DEBUG] Emergency lock release
+2013-10-23 00:02:26,904 [DEBUG] acquired lock
+2013-10-23 00:02:26,904 [DEBUG] Accepting connections
+2013-10-23 00:02:29,005 [DEBUG] woke up
+2013-10-23 00:02:29,914 [WARNING] passive thread timed out
+2013-10-23 00:02:29,914 [DEBUG] Emergency lock release
+2013-10-23 00:02:30,914 [DEBUG] acquired lock
+2013-10-23 00:02:30,914 [DEBUG] Accepting connections
+2013-10-23 00:02:33,921 [WARNING] passive thread timed out
+2013-10-23 00:02:33,921 [DEBUG] Emergency lock release
+2013-10-23 00:02:33,922 [DEBUG] acquired lock
+2013-10-23 00:02:33,922 [DEBUG] Connecting to address 192.168.2.10
+2013-10-23 00:02:33,922 [DEBUG] connection exists, recreating socket
+2013-10-23 00:02:34,915 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-23 00:02:34,916 [DEBUG] Created connection to 192.168.2.10 at port 5001
+2013-10-23 00:02:35,395 [DEBUG] Received state 428, new state 430
+2013-10-23 00:02:35,395 [DEBUG] releasing lock
+2013-10-23 00:02:35,395 [DEBUG] Next epoch: 56
+2013-10-23 00:02:35,395 [DEBUG] sleeping for 8.60419297218
+2013-10-23 00:02:35,396 [DEBUG] acquired lock
+2013-10-23 00:02:35,396 [DEBUG] Accepting connections
+2013-10-23 00:02:35,396 [DEBUG] Accepted connection from 192.168.2.16 at port 5002
+2013-10-23 00:02:35,397 [DEBUG] Received state 432, new state 431
+2013-10-23 00:02:35,397 [DEBUG] releasing lock
+2013-10-23 00:02:35,397 [DEBUG] acquired lock
+2013-10-23 00:02:35,397 [DEBUG] Accepting connections
+2013-10-23 00:02:38,394 [WARNING] passive thread timed out
+2013-10-23 00:02:38,394 [DEBUG] Emergency lock release
+2013-10-23 00:02:39,394 [DEBUG] acquired lock
+2013-10-23 00:02:39,394 [DEBUG] Accepting connections
+2013-10-23 00:02:42,404 [WARNING] passive thread timed out
+2013-10-23 00:02:42,404 [DEBUG] Emergency lock release
+2013-10-23 00:02:43,404 [DEBUG] acquired lock
+2013-10-23 00:02:43,404 [DEBUG] Accepting connections
+2013-10-23 00:02:43,994 [DEBUG] woke up
+2013-10-23 00:02:46,414 [WARNING] passive thread timed out
+2013-10-23 00:02:46,414 [DEBUG] Emergency lock release
+2013-10-23 00:02:46,414 [DEBUG] acquired lock
+2013-10-23 00:02:46,414 [DEBUG] Connecting to address 192.168.2.25
+2013-10-23 00:02:46,415 [DEBUG] connection exists, recreating socket
+2013-10-23 00:02:47,414 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-23 00:02:47,414 [DEBUG] Created connection to 192.168.2.25 at port 5001
+2013-10-23 00:02:47,415 [DEBUG] Received state 431, new state 431
+2013-10-23 00:02:47,415 [DEBUG] releasing lock
+2013-10-23 00:02:47,416 [DEBUG] Next epoch: 57
+2013-10-23 00:02:47,416 [DEBUG] sleeping for 11.5837199688
+2013-10-23 00:02:47,416 [DEBUG] acquired lock
+2013-10-23 00:02:47,417 [DEBUG] Accepting connections
+2013-10-23 00:02:50,424 [WARNING] passive thread timed out
+2013-10-23 00:02:50,424 [DEBUG] Emergency lock release
+2013-10-23 00:02:51,424 [DEBUG] acquired lock
+2013-10-23 00:02:51,424 [DEBUG] Accepting connections
+2013-10-23 00:02:54,434 [WARNING] passive thread timed out
+2013-10-23 00:02:54,434 [DEBUG] Emergency lock release
+2013-10-23 00:02:55,434 [DEBUG] acquired lock
+2013-10-23 00:02:55,434 [DEBUG] Accepting connections
+2013-10-23 00:02:58,444 [WARNING] passive thread timed out
+2013-10-23 00:02:58,444 [DEBUG] Emergency lock release
+2013-10-23 00:02:59,004 [DEBUG] woke up
+2013-10-23 00:02:59,444 [DEBUG] acquired lock
+2013-10-23 00:02:59,444 [DEBUG] Accepting connections
+2013-10-23 00:03:02,454 [WARNING] passive thread timed out
+2013-10-23 00:03:02,454 [DEBUG] Emergency lock release
+2013-10-23 00:03:02,454 [DEBUG] acquired lock
+2013-10-23 00:03:02,454 [DEBUG] Connecting to address 192.168.2.12
+2013-10-23 00:03:02,455 [DEBUG] connection exists, recreating socket
+2013-10-23 00:03:03,454 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-23 00:03:03,455 [DEBUG] Created connection to 192.168.2.12 at port 5001
+2013-10-23 00:03:05,833 [DEBUG] Received state 433, new state 432
+2013-10-23 00:03:05,833 [DEBUG] releasing lock
+2013-10-23 00:03:05,833 [DEBUG] Next epoch: 58
+2013-10-23 00:03:05,834 [DEBUG] sleeping for 8.16601490974
+2013-10-23 00:03:05,834 [DEBUG] acquired lock
+2013-10-23 00:03:05,834 [DEBUG] Accepting connections
+2013-10-23 00:03:08,834 [WARNING] passive thread timed out
+2013-10-23 00:03:08,834 [DEBUG] Emergency lock release
+2013-10-23 00:03:09,834 [DEBUG] acquired lock
+2013-10-23 00:03:09,834 [DEBUG] Accepting connections
+2013-10-23 00:03:12,844 [WARNING] passive thread timed out
+2013-10-23 00:03:12,844 [DEBUG] Emergency lock release
+2013-10-23 00:03:13,844 [DEBUG] acquired lock
+2013-10-23 00:03:13,844 [DEBUG] Accepting connections
+2013-10-23 00:03:13,994 [DEBUG] woke up
+2013-10-23 00:03:16,854 [WARNING] passive thread timed out
+2013-10-23 00:03:16,854 [DEBUG] Emergency lock release
+2013-10-23 00:03:16,854 [DEBUG] acquired lock
+2013-10-23 00:03:16,854 [DEBUG] Connecting to address 192.168.2.10
+2013-10-23 00:03:16,855 [DEBUG] connection exists, recreating socket
+2013-10-23 00:03:17,854 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-23 00:03:17,854 [DEBUG] Created connection to 192.168.2.10 at port 5001
+2013-10-23 00:03:20,245 [DEBUG] Received state 428, new state 430
+2013-10-23 00:03:20,246 [DEBUG] releasing lock
+2013-10-23 00:03:20,246 [DEBUG] Next epoch: 59
+2013-10-23 00:03:20,246 [DEBUG] sleeping for 8.75350403786
+2013-10-23 00:03:20,247 [DEBUG] acquired lock
+2013-10-23 00:03:20,247 [DEBUG] Accepting connections
+2013-10-23 00:03:20,248 [DEBUG] Accepted connection from 192.168.2.16 at port 5002
+2013-10-23 00:03:20,248 [DEBUG] Received state 429, new state 429
+2013-10-23 00:03:20,248 [DEBUG] releasing lock
+2013-10-23 00:03:20,248 [DEBUG] acquired lock
+2013-10-23 00:03:20,249 [DEBUG] Accepting connections
+2013-10-23 00:03:20,249 [DEBUG] Accepted connection from 192.168.2.12 at port 5002
+2013-10-23 00:03:20,249 [DEBUG] Received state 432, new state 430
+2013-10-23 00:03:20,250 [DEBUG] releasing lock
+2013-10-23 00:03:20,250 [DEBUG] acquired lock
+2013-10-23 00:03:20,250 [DEBUG] Accepting connections
+2013-10-23 00:03:20,250 [DEBUG] Accepted connection from 192.168.2.25 at port 5002
+2013-10-23 00:03:20,250 [DEBUG] Received state 430, new state 430
+2013-10-23 00:03:20,251 [DEBUG] releasing lock
+2013-10-23 00:03:20,251 [DEBUG] acquired lock
+2013-10-23 00:03:20,251 [DEBUG] Accepting connections
+2013-10-23 00:03:23,264 [WARNING] passive thread timed out
+2013-10-23 00:03:23,264 [DEBUG] Emergency lock release
+2013-10-23 00:03:24,260 [DEBUG] acquired lock
+2013-10-23 00:03:24,261 [DEBUG] Accepting connections
+2013-10-23 00:03:27,274 [WARNING] passive thread timed out
+2013-10-23 00:03:27,274 [DEBUG] Emergency lock release
+2013-10-23 00:03:28,274 [DEBUG] acquired lock
+2013-10-23 00:03:28,274 [DEBUG] Accepting connections
+2013-10-23 00:03:29,007 [DEBUG] woke up
+2013-10-23 00:03:31,276 [WARNING] passive thread timed out
+2013-10-23 00:03:31,276 [DEBUG] Emergency lock release
+2013-10-23 00:03:31,276 [DEBUG] acquired lock
+2013-10-23 00:03:31,276 [DEBUG] Connecting to address 192.168.2.10
+2013-10-23 00:03:31,277 [DEBUG] connection exists, recreating socket
+2013-10-23 00:03:32,295 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-23 00:03:32,295 [DEBUG] Created connection to 192.168.2.10 at port 5001
+2013-10-23 00:03:32,467 [DEBUG] Received state 428, new state 429
+2013-10-23 00:03:32,468 [DEBUG] releasing lock
+2013-10-23 00:03:32,468 [DEBUG] Next epoch: 60
+2013-10-23 00:03:32,468 [DEBUG] sleeping for 11.5316429138
+2013-10-23 00:03:32,469 [DEBUG] acquired lock
+2013-10-23 00:03:32,469 [DEBUG] Accepting connections
+2013-10-23 00:03:35,466 [WARNING] passive thread timed out
+2013-10-23 00:03:35,466 [DEBUG] Emergency lock release
+2013-10-23 00:03:36,472 [DEBUG] acquired lock
+2013-10-23 00:03:36,472 [DEBUG] Accepting connections
+2013-10-23 00:03:39,484 [WARNING] passive thread timed out
+2013-10-23 00:03:39,484 [DEBUG] Emergency lock release
+2013-10-23 00:03:40,487 [DEBUG] acquired lock
+2013-10-23 00:03:40,487 [DEBUG] Accepting connections
+2013-10-23 00:03:43,504 [WARNING] passive thread timed out
+2013-10-23 00:03:43,504 [DEBUG] Emergency lock release
+2013-10-23 00:03:44,004 [DEBUG] woke up
+2013-10-23 00:03:44,504 [DEBUG] acquired lock
+2013-10-23 00:03:44,504 [DEBUG] Accepting connections
+2013-10-23 00:03:47,505 [WARNING] passive thread timed out
+2013-10-23 00:03:47,506 [DEBUG] Emergency lock release
+2013-10-23 00:03:47,506 [DEBUG] acquired lock
+2013-10-23 00:03:47,506 [DEBUG] Connecting to address 192.168.2.25
+2013-10-23 00:03:47,506 [DEBUG] connection exists, recreating socket
+2013-10-23 00:03:48,525 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-23 00:03:48,525 [DEBUG] Created connection to 192.168.2.25 at port 5001
+2013-10-23 00:03:48,526 [DEBUG] Received state 429, new state 429
+2013-10-23 00:03:48,526 [DEBUG] releasing lock
+2013-10-23 00:03:48,526 [DEBUG] Next epoch: 61
+2013-10-23 00:03:48,527 [DEBUG] sleeping for 10.473017931
+2013-10-23 00:03:48,527 [DEBUG] acquired lock
+2013-10-23 00:03:48,527 [DEBUG] Accepting connections
+2013-10-23 00:03:51,540 [WARNING] passive thread timed out
+2013-10-23 00:03:51,541 [DEBUG] Emergency lock release
+2013-10-23 00:03:52,541 [DEBUG] acquired lock
+2013-10-23 00:03:52,541 [DEBUG] Accepting connections
+2013-10-23 00:03:55,554 [WARNING] passive thread timed out
+2013-10-23 00:03:55,554 [DEBUG] Emergency lock release
+2013-10-23 00:03:56,550 [DEBUG] acquired lock
+2013-10-23 00:03:56,550 [DEBUG] Accepting connections
+2013-10-23 00:03:59,014 [DEBUG] woke up
+2013-10-23 00:03:59,564 [WARNING] passive thread timed out
+2013-10-23 00:03:59,564 [DEBUG] Emergency lock release
+2013-10-23 00:04:00,574 [DEBUG] acquired lock
+2013-10-23 00:04:00,574 [DEBUG] Accepting connections
+2013-10-23 00:04:00,574 [DEBUG] Accepted connection from 192.168.2.10 at port 5002
+2013-10-23 00:04:00,575 [DEBUG] Received state 428, new state 428
+2013-10-23 00:04:00,575 [DEBUG] releasing lock
+2013-10-23 00:04:00,575 [DEBUG] acquired lock
+2013-10-23 00:04:00,575 [DEBUG] Accepting connections
+2013-10-23 00:04:03,553 [DEBUG] Accepted connection from 192.168.2.16 at port 5002
+2013-10-23 00:04:03,553 [DEBUG] Received state 428, new state 428
+2013-10-23 00:04:03,553 [DEBUG] releasing lock
+2013-10-23 00:04:03,554 [DEBUG] acquired lock
+2013-10-23 00:04:03,554 [DEBUG] Accepting connections
+2013-10-23 00:04:06,554 [WARNING] passive thread timed out
+2013-10-23 00:04:06,554 [DEBUG] Emergency lock release
+2013-10-23 00:04:06,554 [DEBUG] acquired lock
+2013-10-23 00:04:06,554 [DEBUG] Connecting to address 192.168.2.10
+2013-10-23 00:04:06,555 [DEBUG] connection exists, recreating socket
+2013-10-23 00:04:07,554 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-23 00:04:07,555 [DEBUG] Created connection to 192.168.2.10 at port 5001
+2013-10-23 00:04:07,566 [DEBUG] Received state 428, new state 428
+2013-10-23 00:04:07,566 [DEBUG] releasing lock
+2013-10-23 00:04:07,566 [DEBUG] Next epoch: 62
+2013-10-23 00:04:07,567 [DEBUG] sleeping for 6.4328660965
+2013-10-23 00:04:07,567 [DEBUG] acquired lock
+2013-10-23 00:04:07,567 [DEBUG] Accepting connections
+2013-10-23 00:04:10,584 [WARNING] passive thread timed out
+2013-10-23 00:04:10,584 [DEBUG] Emergency lock release
+2013-10-23 00:04:11,584 [DEBUG] acquired lock
+2013-10-23 00:04:11,584 [DEBUG] Accepting connections
+2013-10-23 00:04:14,014 [DEBUG] woke up
+2013-10-23 00:04:14,594 [WARNING] passive thread timed out
+2013-10-23 00:04:14,594 [DEBUG] Emergency lock release
+2013-10-23 00:04:15,594 [DEBUG] acquired lock
+2013-10-23 00:04:15,594 [DEBUG] Accepting connections
+2013-10-23 00:04:18,605 [WARNING] passive thread timed out
+2013-10-23 00:04:18,605 [DEBUG] Emergency lock release
+2013-10-23 00:04:18,606 [DEBUG] acquired lock
+2013-10-23 00:04:18,606 [DEBUG] Connecting to address 192.168.2.12
+2013-10-23 00:04:18,606 [DEBUG] connection exists, recreating socket
+2013-10-23 00:04:19,614 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-23 00:04:19,615 [DEBUG] Created connection to 192.168.2.12 at port 5001
+2013-10-23 00:04:19,615 [DEBUG] Received state 430, new state 429
+2013-10-23 00:04:19,616 [DEBUG] releasing lock
+2013-10-23 00:04:19,616 [DEBUG] Next epoch: 63
+2013-10-23 00:04:19,616 [DEBUG] sleeping for 9.38360309601
+2013-10-23 00:04:19,616 [DEBUG] acquired lock
+2013-10-23 00:04:19,617 [DEBUG] Accepting connections
+2013-10-23 00:04:22,628 [WARNING] passive thread timed out
+2013-10-23 00:04:22,628 [DEBUG] Emergency lock release
+2013-10-23 00:04:23,634 [DEBUG] acquired lock
+2013-10-23 00:04:23,634 [DEBUG] Accepting connections
+2013-10-23 00:04:26,644 [WARNING] passive thread timed out
+2013-10-23 00:04:26,644 [DEBUG] Emergency lock release
+2013-10-23 00:04:27,644 [DEBUG] acquired lock
+2013-10-23 00:04:27,644 [DEBUG] Accepting connections
+2013-10-23 00:04:29,004 [DEBUG] woke up
+2013-10-23 00:04:30,654 [WARNING] passive thread timed out
+2013-10-23 00:04:30,654 [DEBUG] Emergency lock release
+2013-10-23 00:04:31,104 [DEBUG] acquired lock
+2013-10-23 00:04:31,104 [DEBUG] Connecting to address 192.168.2.12
+2013-10-23 00:04:31,104 [DEBUG] connection exists, recreating socket
+2013-10-23 00:04:32,104 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-23 00:04:32,104 [DEBUG] Created connection to 192.168.2.12 at port 5001
+2013-10-23 00:04:32,322 [DEBUG] Received state 430, new state 429
+2013-10-23 00:04:32,322 [DEBUG] releasing lock
+2013-10-23 00:04:32,322 [DEBUG] Next epoch: 64
+2013-10-23 00:04:32,322 [DEBUG] sleeping for 11.677421093
+2013-10-23 00:04:32,323 [DEBUG] acquired lock
+2013-10-23 00:04:32,323 [DEBUG] Accepting connections
+2013-10-23 00:04:35,334 [WARNING] passive thread timed out
+2013-10-23 00:04:35,334 [DEBUG] Emergency lock release
+2013-10-23 00:04:36,334 [DEBUG] acquired lock
+2013-10-23 00:04:36,334 [DEBUG] Accepting connections
+2013-10-23 00:04:37,528 [DEBUG] Accepted connection from 192.168.2.25 at port 5002
+2013-10-23 00:04:37,528 [DEBUG] Received state 428, new state 428
+2013-10-23 00:04:37,529 [DEBUG] releasing lock
+2013-10-23 00:04:37,529 [DEBUG] acquired lock
+2013-10-23 00:04:37,529 [DEBUG] Accepting connections
+2013-10-23 00:04:40,534 [WARNING] passive thread timed out
+2013-10-23 00:04:40,535 [DEBUG] Emergency lock release
+2013-10-23 00:04:41,540 [DEBUG] acquired lock
+2013-10-23 00:04:41,541 [DEBUG] Accepting connections
+2013-10-23 00:04:43,985 [DEBUG] woke up
+2013-10-23 00:04:44,554 [WARNING] passive thread timed out
+2013-10-23 00:04:44,554 [DEBUG] Emergency lock release
+2013-10-23 00:04:45,555 [DEBUG] acquired lock
+2013-10-23 00:04:45,555 [DEBUG] Accepting connections
+2013-10-23 00:04:45,571 [DEBUG] Accepted connection from 192.168.2.25 at port 5002
+2013-10-23 00:04:45,571 [DEBUG] Received state 428, new state 428
+2013-10-23 00:04:45,571 [DEBUG] releasing lock
+2013-10-23 00:04:45,571 [DEBUG] acquired lock
+2013-10-23 00:04:45,572 [DEBUG] Accepting connections
+2013-10-23 00:04:48,584 [WARNING] passive thread timed out
+2013-10-23 00:04:48,584 [DEBUG] Emergency lock release
+2013-10-23 00:04:48,584 [DEBUG] acquired lock
+2013-10-23 00:04:48,584 [DEBUG] Connecting to address 192.168.2.16
+2013-10-23 00:04:48,585 [DEBUG] connection exists, recreating socket
+2013-10-23 00:04:49,585 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-23 00:04:49,585 [DEBUG] Created connection to 192.168.2.16 at port 5001
+2013-10-23 00:04:49,586 [DEBUG] Received state 428, new state 428
+2013-10-23 00:04:49,586 [DEBUG] releasing lock
+2013-10-23 00:04:49,587 [DEBUG] Next epoch: 65
+2013-10-23 00:04:49,587 [DEBUG] sleeping for 9.41281795502
+2013-10-23 00:04:49,587 [DEBUG] acquired lock
+2013-10-23 00:04:49,587 [DEBUG] Accepting connections
+2013-10-23 00:04:52,604 [WARNING] passive thread timed out
+2013-10-23 00:04:52,604 [DEBUG] Emergency lock release
+2013-10-23 00:04:53,604 [DEBUG] acquired lock
+2013-10-23 00:04:53,604 [DEBUG] Accepting connections
+2013-10-23 00:04:53,604 [DEBUG] Accepted connection from 192.168.2.12 at port 5002
+2013-10-23 00:04:53,605 [DEBUG] Received state 429, new state 428
+2013-10-23 00:04:53,605 [DEBUG] releasing lock
+2013-10-23 00:04:53,605 [DEBUG] acquired lock
+2013-10-23 00:04:53,605 [DEBUG] Accepting connections
+2013-10-23 00:04:56,614 [WARNING] passive thread timed out
+2013-10-23 00:04:56,614 [DEBUG] Emergency lock release
+2013-10-23 00:04:57,614 [DEBUG] acquired lock
+2013-10-23 00:04:57,614 [DEBUG] Accepting connections
+2013-10-23 00:04:59,014 [DEBUG] woke up
+2013-10-23 00:05:00,624 [WARNING] passive thread timed out
+2013-10-23 00:05:00,624 [DEBUG] Emergency lock release
+2013-10-23 00:05:00,624 [DEBUG] acquired lock
+2013-10-23 00:05:00,624 [DEBUG] Connecting to address 192.168.2.12
+2013-10-23 00:05:00,624 [DEBUG] connection exists, recreating socket
+2013-10-23 00:05:01,625 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-23 00:05:01,625 [DEBUG] Created connection to 192.168.2.12 at port 5001
+2013-10-23 00:05:01,626 [DEBUG] Received state 428, new state 428
+2013-10-23 00:05:01,626 [DEBUG] releasing lock
+2013-10-23 00:05:01,626 [DEBUG] Next epoch: 66
+2013-10-23 00:05:01,627 [DEBUG] sleeping for 12.3728990555
+2013-10-23 00:05:01,627 [DEBUG] acquired lock
+2013-10-23 00:05:01,627 [DEBUG] Accepting connections
+2013-10-23 00:05:04,644 [WARNING] passive thread timed out
+2013-10-23 00:05:04,644 [DEBUG] Emergency lock release
+2013-10-23 00:05:05,644 [DEBUG] acquired lock
+2013-10-23 00:05:05,644 [DEBUG] Accepting connections
+2013-10-23 00:05:08,654 [WARNING] passive thread timed out
+2013-10-23 00:05:08,654 [DEBUG] Emergency lock release
+2013-10-23 00:05:09,654 [DEBUG] acquired lock
+2013-10-23 00:05:09,654 [DEBUG] Accepting connections
+2013-10-23 00:05:12,664 [WARNING] passive thread timed out
+2013-10-23 00:05:12,664 [DEBUG] Emergency lock release
+2013-10-23 00:05:13,664 [DEBUG] acquired lock
+2013-10-23 00:05:13,664 [DEBUG] Accepting connections
+2013-10-23 00:05:14,005 [DEBUG] woke up
+2013-10-23 00:05:16,674 [WARNING] passive thread timed out
+2013-10-23 00:05:16,674 [DEBUG] Emergency lock release
+2013-10-23 00:05:16,674 [DEBUG] acquired lock
+2013-10-23 00:05:16,674 [DEBUG] Connecting to address 192.168.2.10
+2013-10-23 00:05:16,674 [DEBUG] connection exists, recreating socket
+2013-10-23 00:05:17,673 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-23 00:05:17,673 [DEBUG] Created connection to 192.168.2.10 at port 5001
+2013-10-23 00:05:17,674 [DEBUG] Received state 428, new state 428
+2013-10-23 00:05:17,674 [DEBUG] releasing lock
+2013-10-23 00:05:17,675 [DEBUG] Next epoch: 67
+2013-10-23 00:05:17,675 [DEBUG] sleeping for 11.3248341084
+2013-10-23 00:05:17,675 [DEBUG] acquired lock
+2013-10-23 00:05:17,675 [DEBUG] Accepting connections
+2013-10-23 00:05:17,676 [DEBUG] Accepted connection from 192.168.2.16 at port 5002
+2013-10-23 00:05:17,676 [DEBUG] Received state 428, new state 428
+2013-10-23 00:05:17,676 [DEBUG] releasing lock
+2013-10-23 00:05:17,676 [DEBUG] acquired lock
+2013-10-23 00:05:17,676 [DEBUG] Accepting connections
+2013-10-23 00:05:20,684 [WARNING] passive thread timed out
+2013-10-23 00:05:20,684 [DEBUG] Emergency lock release
+2013-10-23 00:05:21,684 [DEBUG] acquired lock
+2013-10-23 00:05:21,684 [DEBUG] Accepting connections
+2013-10-23 00:05:24,459 [DEBUG] Accepted connection from 192.168.2.12 at port 5002
+2013-10-23 00:05:24,459 [DEBUG] Received state 428, new state 428
+2013-10-23 00:05:24,459 [DEBUG] releasing lock
+2013-10-23 00:05:24,459 [DEBUG] acquired lock
+2013-10-23 00:05:24,459 [DEBUG] Accepting connections
+2013-10-23 00:05:27,464 [WARNING] passive thread timed out
+2013-10-23 00:05:27,464 [DEBUG] Emergency lock release
+2013-10-23 00:05:28,464 [DEBUG] acquired lock
+2013-10-23 00:05:28,464 [DEBUG] Accepting connections
+2013-10-23 00:05:29,004 [DEBUG] woke up
+2013-10-23 00:05:31,476 [WARNING] passive thread timed out
+2013-10-23 00:05:31,477 [DEBUG] Emergency lock release
+2013-10-23 00:05:31,514 [DEBUG] acquired lock
+2013-10-23 00:05:31,514 [DEBUG] Connecting to address 192.168.2.16
+2013-10-23 00:05:31,514 [DEBUG] connection exists, recreating socket
+2013-10-23 00:05:32,514 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-23 00:05:32,514 [DEBUG] Created connection to 192.168.2.16 at port 5001
+2013-10-23 00:05:32,515 [DEBUG] Received state 428, new state 428
+2013-10-23 00:05:32,515 [DEBUG] releasing lock
+2013-10-23 00:05:32,516 [DEBUG] Next epoch: 68
+2013-10-23 00:05:32,516 [DEBUG] sleeping for 11.4837920666
+2013-10-23 00:05:32,516 [DEBUG] acquired lock
+2013-10-23 00:05:32,516 [DEBUG] Accepting connections
+2013-10-23 00:05:35,525 [WARNING] passive thread timed out
+2013-10-23 00:05:35,525 [DEBUG] Emergency lock release
+2013-10-23 00:05:36,533 [DEBUG] acquired lock
+2013-10-23 00:05:36,533 [DEBUG] Accepting connections
+2013-10-23 00:05:36,533 [DEBUG] Accepted connection from 192.168.2.16 at port 5002
+2013-10-23 00:05:36,534 [DEBUG] Received state 428, new state 428
+2013-10-23 00:05:36,534 [DEBUG] releasing lock
+2013-10-23 00:05:36,534 [DEBUG] acquired lock
+2013-10-23 00:05:36,534 [DEBUG] Accepting connections
+2013-10-23 00:05:39,544 [WARNING] passive thread timed out
+2013-10-23 00:05:39,544 [DEBUG] Emergency lock release
+2013-10-23 00:05:40,545 [DEBUG] acquired lock
+2013-10-23 00:05:40,546 [DEBUG] Accepting connections
+2013-10-23 00:05:43,554 [WARNING] passive thread timed out
+2013-10-23 00:05:43,555 [DEBUG] Emergency lock release
+2013-10-23 00:05:44,004 [DEBUG] woke up
+2013-10-23 00:05:44,564 [DEBUG] acquired lock
+2013-10-23 00:05:44,564 [DEBUG] Accepting connections
+2013-10-23 00:05:45,931 [DEBUG] Accepted connection from 192.168.2.25 at port 5002
+2013-10-23 00:05:45,931 [DEBUG] Received state 428, new state 428
+2013-10-23 00:05:45,932 [DEBUG] acquired lock
+2013-10-23 00:05:45,932 [DEBUG] Connecting to address 192.168.2.25
+2013-10-23 00:05:45,932 [DEBUG] connection exists, recreating socket
+2013-10-23 00:05:45,932 [DEBUG] releasing lock
+2013-10-23 00:05:46,934 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-23 00:05:46,934 [DEBUG] Created connection to 192.168.2.25 at port 5001
+2013-10-23 00:05:46,935 [DEBUG] Received state 428, new state 428
+2013-10-23 00:05:46,935 [DEBUG] releasing lock
+2013-10-23 00:05:46,935 [DEBUG] Next epoch: 69
+2013-10-23 00:05:46,936 [DEBUG] sleeping for 12.0639460087
+2013-10-23 00:05:46,936 [DEBUG] acquired lock
+2013-10-23 00:05:46,936 [DEBUG] Accepting connections
+2013-10-23 00:05:49,944 [WARNING] passive thread timed out
+2013-10-23 00:05:49,944 [DEBUG] Emergency lock release
+2013-10-23 00:05:50,950 [DEBUG] acquired lock
+2013-10-23 00:05:50,950 [DEBUG] Accepting connections
+2013-10-23 00:05:53,964 [WARNING] passive thread timed out
+2013-10-23 00:05:53,964 [DEBUG] Emergency lock release
+2013-10-23 00:05:54,965 [DEBUG] acquired lock
+2013-10-23 00:05:54,965 [DEBUG] Accepting connections
+2013-10-23 00:05:57,984 [WARNING] passive thread timed out
+2013-10-23 00:05:57,984 [DEBUG] Emergency lock release
+2013-10-23 00:05:58,984 [DEBUG] acquired lock
+2013-10-23 00:05:58,984 [DEBUG] Accepting connections
+2013-10-23 00:05:58,994 [DEBUG] woke up
+2013-10-23 00:06:01,994 [WARNING] passive thread timed out
+2013-10-23 00:06:01,994 [DEBUG] Emergency lock release
+2013-10-23 00:06:02,814 [DEBUG] acquired lock
+2013-10-23 00:06:02,814 [DEBUG] Connecting to address 192.168.2.25
+2013-10-23 00:06:02,814 [DEBUG] connection exists, recreating socket
+2013-10-23 00:06:03,814 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-23 00:06:03,814 [DEBUG] Created connection to 192.168.2.25 at port 5001
+2013-10-23 00:06:06,264 [DEBUG] Received state 428, new state 428
+2013-10-23 00:06:06,265 [DEBUG] releasing lock
+2013-10-23 00:06:06,265 [DEBUG] Next epoch: 70
+2013-10-23 00:06:06,265 [DEBUG] sleeping for 7.73461699486
+2013-10-23 00:06:06,265 [DEBUG] acquired lock
+2013-10-23 00:06:06,266 [DEBUG] Accepting connections
+2013-10-23 00:06:06,266 [DEBUG] Accepted connection from 192.168.2.25 at port 5002
+2013-10-23 00:06:06,266 [DEBUG] Received state 428, new state 428
+2013-10-23 00:06:06,266 [DEBUG] releasing lock
+2013-10-23 00:06:06,267 [DEBUG] acquired lock
+2013-10-23 00:06:06,267 [DEBUG] Accepting connections
+2013-10-23 00:06:09,270 [WARNING] passive thread timed out
+2013-10-23 00:06:09,270 [DEBUG] Emergency lock release
+2013-10-23 00:06:10,274 [DEBUG] acquired lock
+2013-10-23 00:06:10,274 [DEBUG] Accepting connections
+2013-10-23 00:06:13,284 [WARNING] passive thread timed out
+2013-10-23 00:06:13,284 [DEBUG] Emergency lock release
+2013-10-23 00:06:14,004 [DEBUG] woke up
+2013-10-23 00:06:14,284 [DEBUG] acquired lock
+2013-10-23 00:06:14,284 [DEBUG] Accepting connections
+2013-10-23 00:06:16,913 [DEBUG] Accepted connection from 192.168.2.16 at port 5002
+2013-10-23 00:06:16,913 [DEBUG] Received state 428, new state 428
+2013-10-23 00:06:16,913 [DEBUG] releasing lock
+2013-10-23 00:06:16,914 [DEBUG] acquired lock
+2013-10-23 00:06:16,914 [DEBUG] Accepting connections
+2013-10-23 00:06:19,914 [WARNING] passive thread timed out
+2013-10-23 00:06:19,914 [DEBUG] Emergency lock release
+2013-10-23 00:06:19,914 [DEBUG] acquired lock
+2013-10-23 00:06:19,914 [DEBUG] Connecting to address 192.168.2.12
+2013-10-23 00:06:19,915 [DEBUG] connection exists, recreating socket
+2013-10-23 00:06:20,914 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-23 00:06:20,915 [DEBUG] Created connection to 192.168.2.12 at port 5001
+2013-10-23 00:06:20,915 [DEBUG] Received state 428, new state 428
+2013-10-23 00:06:20,916 [DEBUG] releasing lock
+2013-10-23 00:06:20,916 [DEBUG] Next epoch: 71
+2013-10-23 00:06:20,916 [DEBUG] sleeping for 8.08359193802
+2013-10-23 00:06:20,916 [DEBUG] acquired lock
+2013-10-23 00:06:20,917 [DEBUG] Accepting connections
+2013-10-23 00:06:23,924 [WARNING] passive thread timed out
+2013-10-23 00:06:23,924 [DEBUG] Emergency lock release
+2013-10-23 00:06:24,924 [DEBUG] acquired lock
+2013-10-23 00:06:24,924 [DEBUG] Accepting connections
+2013-10-23 00:06:27,934 [WARNING] passive thread timed out
+2013-10-23 00:06:27,934 [DEBUG] Emergency lock release
+2013-10-23 00:06:28,934 [DEBUG] acquired lock
+2013-10-23 00:06:28,934 [DEBUG] Accepting connections
+2013-10-23 00:06:29,004 [DEBUG] woke up
+2013-10-23 00:06:31,944 [WARNING] passive thread timed out
+2013-10-23 00:06:31,944 [DEBUG] Emergency lock release
+2013-10-23 00:06:32,454 [DEBUG] acquired lock
+2013-10-23 00:06:32,454 [DEBUG] Connecting to address 192.168.2.25
+2013-10-23 00:06:32,454 [DEBUG] connection exists, recreating socket
+2013-10-23 00:06:33,454 [DEBUG] bind to IP addres 192.168.2.13 port 5002
+2013-10-23 00:06:33,454 [DEBUG] Created connection to 192.168.2.25 at port 5001
+2013-10-23 00:06:33,455 [DEBUG] Received state 428, new state 428
+2013-10-23 00:06:33,455 [DEBUG] releasing lock
+2013-10-23 00:06:33,456 [DEBUG] acquired lock
+2013-10-23 00:06:33,456 [DEBUG] Accepting connections
+2013-10-23 00:06:33,456 [DEBUG] Accepted connection from 192.168.2.12 at port 5002
+2013-10-23 00:06:33,457 [DEBUG] Received state 428, new state 428
+2013-10-23 00:06:33,457 [DEBUG] releasing lock
+2013-10-23 00:06:33,457 [DEBUG] acquired lock
+2013-10-23 00:06:33,457 [DEBUG] Accepting connections
+2013-10-23 00:06:33,457 [DEBUG] Next epoch: 72
+2013-10-23 00:06:33,458 [DEBUG] sleeping for 10.5419960022
+2013-10-23 00:06:36,464 [WARNING] passive thread timed out
+2013-10-23 00:06:36,464 [DEBUG] Emergency lock release
+2013-10-23 00:06:37,464 [DEBUG] acquired lock
+2013-10-23 00:06:37,464 [DEBUG] Accepting connections
+2013-10-23 00:06:40,474 [WARNING] passive thread timed out
+2013-10-23 00:06:40,474 [DEBUG] Emergency lock release
