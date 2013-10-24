@@ -126,7 +126,7 @@ class GossipState(object):
         """ update state, add to history and release lock """
         def aggregate(state, new_state):
             """ Aggregate states """
-            return (state + new_state) / 2
+            return (state + new_state) / 2.0
         self._state = aggregate(self._state, new_state)
         self._logger.debug("Received state %s, new state %s", new_state,
             self._state)
@@ -247,7 +247,7 @@ class ActiveGossipThread(GossipThread):
             sys.stdout.flush()
             try:
                 self.gossip_epoch.next_epoch() # TODO
-                time.sleep(random.randint(0, 300) / 100.0)
+                time.sleep(random.randint(0, 400) / 100.0)
                 locked_by_me = True
                 neighbour = random.choice(self.dict_of_neighbours.keys())
                 neighbour_ip = self.dict_of_neighbours[neighbour]
@@ -373,7 +373,8 @@ class GossipDaemon(BaseDaemon):
             int(self.config.get('epochs', 'max')),
             int(self.config.get('epochs', 'duration'))
         )
-        self.gstate = GossipState(self.logger, args.state, self.gepoch)
+        statexxx = random.randint(0, 1000) * 1.0
+        self.gstate = GossipState(self.logger, statexxx, self.gepoch)
 
     def exit_program(self, exit_state):
         self.gepoch.stop()
@@ -458,7 +459,7 @@ class GossipDaemon(BaseDaemon):
         if len(iface_ip_list) == 1:
             return iface_ip_list[0]
         elif len(iface_ip_list) > 1:
-            self.logger.warn("more than one ip on interface: %s", iface_ip_list)
+            self.logger.warn("mooore than one ip on interface: %s", iface_ip_list)
             self.logger.warn("choosing %s", iface_ip_list[-1])
             return iface_ip_list[-1]
         else:
